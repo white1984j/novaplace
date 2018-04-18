@@ -1,0 +1,175 @@
+@import "normalize"
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "../img/sprite/sprite.css"
+
+input::placeholder,
+textarea::placeholder
+	font-size: 12px
+	color: $gray2
+	font-weight: normal
+input:focus::placeholder,
+textarea:hover::placeholder
+	color: transparent
+
+
+
+// ::selection
+// 	background-color: $accent
+// 	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+.icon
+	display: inline-block
+
+.content-sm
+	flex-basis: 340px
+
+.no-gutters > .content-bg,
+.content-bg
+	padding: 0 30px
+	flex-basis: calc(100% - 340px)
+
+.container
+	max-width: 1920px
+.container.no-gutters
+	padding: 0
+	margin: auto
+
+.btn
+	display: inline-block
+	padding: 8px 30px
+	border-radius: 30px
+	border: 2px solid
+	transition: 0.2s
+.btn--red
+	background: $red
+	border-color: $red
+	color: $white
+	&:hover
+		text-decoration: none
+		background: $white
+		color: $red
+
+.btn-filter
+	display: inline-flex
+	padding: 14px 30px
+	width: 230px
+	background: $red
+	color: $white
+	align-items: center
+	justify-content: center
+	border-radius: 30px
+	font-size: 16px
+	font-family: $Raleway-SemiBold
+	transition: 0.2s
+	.icon
+		margin-right: 12px
+	&:hover
+		background: $blue-btn
+		color: #fff
+		text-decoration: none
+
+.icons-hover
+	.icon
+		display: none
+	.icons-hover--visible
+		display: inline-block
+	&:hover
+		.icon
+			display: inline-block
+		.icons-hover--visible
+			display: none
+
+
+
+// header
+.b-header
+	padding: 25px 0
+	box-shadow: 0 2px 8px -3px rgba(0,0,0,0.6)
+.b-header__logo
+	text-align: center
+	padding: 0 15px
+.link-tel
+	font-size: 16px
+	font-family: $RobotoSlab
+	font-weight: bold
+	color: $black
+	&:hover
+		text-decoration: none
+		color: $red
+.b-header-top-line
+	margin-bottom: 20px
+.b-header-link
+	margin-right: 30px
+
+//nav
+.b-nav
+	list-style: none
+	padding-left: 0
+	margin-bottom: 0
+.b-nav__li
+	display: inline-block
+	margin-right: 75px
+.b-nav__link
+	font-size: 15px
+	color: $blue
+	transition: 0.2s
+	&:hover
+		text-decoration: none
+		color: $red
+
+
+//search
+.b-search
+	display: block
+	position: relative
+.b-search__input
+	display: block
+	width: 100%
+	padding: 7px 30px 7px 0px
+	font-size: 15px
+	color: $black
+	font-weight: bold
+	border: none
+	border-bottom: 1px solid $gray1
+.b-search__submit 
+	position: absolute
+	display: inline-flex
+	right: 0
+	top: 0
+	height: 100%
+	background: none
+	border: none
+
+
+@import "media" // Always at the end
