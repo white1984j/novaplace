@@ -86,7 +86,7 @@
 		<main>
 			<div class="container no-gutters">
 				<div class="row no-gutters">
-					<div class="col content-sm">
+					<div class="col content-sm d-flex">
 						<div class="b-sidebar">
 							<div class="b-sidebar__head">
 								<a href="#" class="btn btn--bg btn--red w-100">Каталог недвижимости</a>
@@ -244,7 +244,46 @@
 						</div>
 					</div>
 					<div class="col content-bg">
-						2
+						<div class="b-content">
+							<div class="row">
+								<div class="col-xl-4">
+									<a href="#" class="b-services-link">
+										<span class="b-services-link__name">Аренда офисов</span>
+										<img src="img/services/services-1.png" alt="img">
+									</a>
+								</div>
+								<div class="col-xl-4">
+									<a href="#" class="b-services-link">
+										<span class="b-services-link__name">Аренда офисов c юридическим адресом</span>
+										<img src="img/services/services-2.png" alt="img">
+									</a>
+								</div>
+								<div class="col-xl-4">
+									<a href="#" class="b-services-link">
+										<span class="b-services-link__name">Аренда отдельно стоящего здания</span>
+										<img src="img/services/services-3.png" alt="img">
+									</a>
+								</div>
+								<div class="col-xl-4">
+									<a href="#" class="b-services-link">
+										<span class="b-services-link__name">Аренда склада</span>
+										<img src="img/services/services-4.png" alt="img">
+									</a>
+								</div>
+								<div class="col-xl-4">
+									<a href="#" class="b-services-link">
+										<span class="b-services-link__name">Помещения свободного назначения</span>
+										<img src="img/services/services-5.png" alt="img">
+									</a>
+								</div>
+								<div class="col-xl-4">
+									<a href="#" class="b-services-link">
+										<span class="b-services-link__name">Продажа</span>
+										<img src="img/services/services-6.png" alt="img">
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
