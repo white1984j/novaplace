@@ -1,5 +1,7 @@
 $(function() {
 
+	console.log(1)
+
 	$('.b-sidebar-path__btn').on("click", function() {
 		$(this).closest('.b-sidebar-path').toggleClass('active').find('.b-sidebar-path__body').slideToggle()
 	});
@@ -23,5 +25,14 @@ $(function() {
 				}
 			})
 	})
+
+
+	$('.metro-stations').each(function() {
+		var $wrap = $(this),
+				$body = $wrap.find('.metro-stations__body');
+		$wrap.scroll(function() {
+
+		});
+	});
 
 });

@@ -11,7 +11,8 @@ var gulp          = require('gulp'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require("gulp-notify"),
 		rsync         = require('gulp-rsync'),
-		spritesmith    = require('gulp.spritesmith');
+		spritesmith   = require('gulp.spritesmith'),
+		babel         = require('gulp-babel');
 
 gulp.task('browser-sync', function() {
 	browsersync({
@@ -33,14 +34,22 @@ gulp.task('styles', function() {
 	.pipe(browsersync.reload( {stream: true} ))
 });
 
-gulp.task('js', function() {
+gulp.task('commonjs', () =>
+    gulp.src('app/js/common.js')
+        .pipe(babel({
+            presets: ['env']
+        }))
+        .pipe(gulp.dest('app/js/babel/'))
+);
+
+gulp.task('js', ['commonjs'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
-		'app/js/common.js', // Always at the end
+		'app/js/babel/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
-	// .pipe(uglify()) // Mifify js (opt.)
+	.pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
 	.pipe(browsersync.reload({ stream: true }))
 });
