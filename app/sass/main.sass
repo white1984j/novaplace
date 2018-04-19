@@ -448,18 +448,42 @@ p
 		color: $red
 .metro-stations
 	display: inline-flex
+	position: relative
 	align-items: center
 	max-width: 100%
-	overflow: scroll
+	overflow: hidden
 .metro-stations__body
 	display: flex
 	align-items: center
+	overflow: hidden
 .metro-stations__color
 	display: inline-block
 	margin: 0 2px 0px 8px
 	border-radius: 50%
 	min-width: 15px
 	min-height: 15px
+.metro-stations__scroll-l,
+.metro-stations__scroll-r
+	display: inline-block
+	position: absolute
+	top: 50%
+	padding: 0
+	margin: 0
+	width: 15px
+	height: 15px
+	border-radius: 50%
+	background: $blue-btn
+	transition: 0.3s
+	z-index: 1
+	&:hover
+		background: $red
+.metro-stations__scroll-l
+	left: 0
+	transform: rotate(90deg)
+.metro-stations__scroll-r
+	right: 0
+	transform: rotate(-90deg)
+
 
 
 //b-catalog-item--grid

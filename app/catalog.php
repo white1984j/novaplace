@@ -284,6 +284,9 @@
 											<div class="d-flex align-items-center">
 											Метро: 
 											<span class="metro-stations">
+												<button class="metro-stations__scroll-l">
+													<i class="icon icon-arrow-white"></i>
+												</button>
 												<span class="metro-stations__body">
 													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
@@ -298,6 +301,9 @@
 													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 												</span>
+												<button class="metro-stations__scroll-r">
+													<i class="icon icon-arrow-white"></i>
+												</button>
 											</span>
 											</div>
 										</li>
