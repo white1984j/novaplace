@@ -10,7 +10,7 @@
 			<a href="home.php">Главная</a>
 		</li>
 		<li>
-			<a href="home.php">Каталог</a>
+			<a href="catalog.php">Каталог</a>
 		</li>
 	</ol>
 </body>

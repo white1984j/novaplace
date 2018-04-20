@@ -285,7 +285,7 @@
 											Метро: 
 											<span class="metro-stations">
 												<button class="metro-stations__scroll-l">
-													<i class="icon icon-arrow-white"></i>
+													<i class="icon icon-arrow-black"></i>
 												</button>
 												<span class="metro-stations__body">
 													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
@@ -302,7 +302,76 @@
 													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 												</span>
 												<button class="metro-stations__scroll-r">
-													<i class="icon icon-arrow-white"></i>
+													<i class="icon icon-arrow-black"></i>
+												</button>
+											</span>
+											</div>
+										</li>
+										<li>
+											<p>Площадь: 848 м²</p>
+										</li>
+									</ul>
+									<a href="#" class="b-catalog-item__more-info">Подробнее</a>
+								</div>
+							</div>
+							<div class="b-catalog-item__result">
+								<p>Ставка аренды за помещение в месяц:</p>
+								<div class="b-catalog-item__price">
+									32 000 &#8381;
+								</div>
+								<a href="#" class="b-catalog-item__order btn btn--blue">Заказать</a>
+							</div>
+						</div>
+
+						<div class="b-catalog-item">
+							<div class="b-catalog-item__body">
+								<div href="#" class="b-catalog-item__img">
+									<div class="b-catalog-item-img-slider">
+										<a href="#">
+											<img src="img/products/catalog-item-1.png" alt="img">
+										</a>
+										<a href="#">
+											<img src="img/products/catalog-item-1.png" alt="img">
+										</a>
+										<a href="#">
+											<img src="img/products/catalog-item-1.png" alt="img">
+										</a>
+									</div>
+									<div class="b-catalog-item-img-slider__numbers">
+										<span class="b-catalog-item-img-slider__numbers--curent" >1</span>
+										из
+										<span class="b-catalog-item-img-slider__numbers--max" >1</span>
+									</div>
+									<div class="b-catalog-item__lot">Лот: <span>376842</span></div>
+								</div>
+								<div class="b-catalog-item__info">
+									<div>		
+										<a href="#" class="b-catalog-item__name">Аренда офисов в бизнес-парке «Вымпел»</a>
+									</div>
+									<div class="b-catalog-item__place">
+										<p>Москва, Очаковское шоссе</p>
+									</div>
+									<ul class="b-catalog-item__prop">
+										<li>
+											<p>Округ: ЦАО</p>
+										</li>
+										<li>
+											<p>Класс: В</p>
+										</li>
+										<li>
+											<div class="d-flex align-items-center">
+											Метро: 
+											<span class="metro-stations">
+												<button class="metro-stations__scroll-l">
+													<i class="icon icon-arrow-black"></i>
+												</button>
+												<span class="metro-stations__body">
+													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+													<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+
+												</span>
+												<button class="metro-stations__scroll-r">
+													<i class="icon icon-arrow-black"></i>
 												</button>
 											</span>
 											</div>
