@@ -311,18 +311,26 @@
 														<div class="d-flex align-items-center">
 														Метро: 
 														<span class="metro-stations">
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															<button class="metro-stations__scroll-l">
+																<i class="icon icon-arrow-black"></i>
+															</button>
+															<span class="metro-stations__body">
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															</span>
+															<button class="metro-stations__scroll-r">
+																<i class="icon icon-arrow-black"></i>
+															</button>
 														</span>
 														</div>
 													</li>
@@ -362,18 +370,26 @@
 														<div class="d-flex align-items-center">
 														Метро: 
 														<span class="metro-stations">
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															<button class="metro-stations__scroll-l">
+																<i class="icon icon-arrow-black"></i>
+															</button>
+															<span class="metro-stations__body">
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															</span>
+															<button class="metro-stations__scroll-r">
+																<i class="icon icon-arrow-black"></i>
+															</button>
 														</span>
 														</div>
 													</li>
@@ -413,18 +429,26 @@
 														<div class="d-flex align-items-center">
 														Метро: 
 														<span class="metro-stations">
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															<button class="metro-stations__scroll-l">
+																<i class="icon icon-arrow-black"></i>
+															</button>
+															<span class="metro-stations__body">
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															</span>
+															<button class="metro-stations__scroll-r">
+																<i class="icon icon-arrow-black"></i>
+															</button>
 														</span>
 														</div>
 													</li>
@@ -464,18 +488,26 @@
 														<div class="d-flex align-items-center">
 														Метро: 
 														<span class="metro-stations">
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															<button class="metro-stations__scroll-l">
+																<i class="icon icon-arrow-black"></i>
+															</button>
+															<span class="metro-stations__body">
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															</span>
+															<button class="metro-stations__scroll-r">
+																<i class="icon icon-arrow-black"></i>
+															</button>
 														</span>
 														</div>
 													</li>
@@ -515,18 +547,26 @@
 														<div class="d-flex align-items-center">
 														Метро: 
 														<span class="metro-stations">
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															<button class="metro-stations__scroll-l">
+																<i class="icon icon-arrow-black"></i>
+															</button>
+															<span class="metro-stations__body">
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															</span>
+															<button class="metro-stations__scroll-r">
+																<i class="icon icon-arrow-black"></i>
+															</button>
 														</span>
 														</div>
 													</li>
@@ -566,18 +606,26 @@
 														<div class="d-flex align-items-center">
 														Метро: 
 														<span class="metro-stations">
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-															<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															<button class="metro-stations__scroll-l">
+																<i class="icon icon-arrow-black"></i>
+															</button>
+															<span class="metro-stations__body">
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+															</span>
+															<button class="metro-stations__scroll-r">
+																<i class="icon icon-arrow-black"></i>
+															</button>
 														</span>
 														</div>
 													</li>
@@ -641,6 +689,37 @@
 								</div>
 							</div>
 							
+						</div>
+
+						<div class="b-content__path">
+							<div class="row">
+								<div class="col-xl-6">
+									<div class="gray-block">
+										<h4 class="gray-block__title">Отзывы</h4>
+										<div class="row">
+											<div class="col-xl-6">
+												<div class="b-preview-review">
+													<a href="#" class="b-preview-review__name">Ирина Антонова</a>
+													<div class="b-preview-review__txt">
+														<p>Приобретение коммерческой недвижимости в собственность не всегда оправдано экономически.</p>
+													</div>
+													<div class="b-preview-review__date">12 марта 2018</div>
+												</div>
+											</div>
+											<div class="col-xl-6">
+												<div class="b-preview-review">
+													<a href="#" class="b-preview-review__name">Святослав Венгржановский</a>
+													<p>Приобретение коммерческой недвижимости в собственность не всегда оправдано экономически.</p>
+													<div class="b-preview-review__date">12 марта 2018</div>
+												</div>
+											</div>
+										</div>
+										<div class="txt-c">
+											<a href="#" class="btn btn--sm btn--blue">Показать еще (245)</a>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

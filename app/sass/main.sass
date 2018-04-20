@@ -117,7 +117,7 @@ p
 	color: $white
 	&:hover
 		text-decoration: none
-		background: $white
+		background: none
 		color: $red
 .btn--blue
 	background: $blue-btn
@@ -125,7 +125,7 @@ p
 	color: $white
 	&:hover
 		text-decoration: none
-		background: $white
+		background: none
 		color: $blue-btn
 .btn--sm
 	padding: 8px 26px
@@ -189,7 +189,14 @@ p
 	padding: 30px
 	background: $white
 .white-block__title
-	margin-bottom: 25px
+	margin-bottom: 15px
+	font: 16px/1.3 $RobotoSlab
+	font-weight: bold
+.gray-block
+	padding: 30px
+	background: $gray8
+.gray-block__title
+	margin-bottom: 15px
 	font: 16px/1.3 $RobotoSlab
 	font-weight: bold
 
@@ -332,6 +339,8 @@ p
 		&:after,
 		.b-services-link__name
 			opacity: 0
+	img
+		max-width: 100%
 .b-services-link__name
 	position: absolute
 	left: 50%
@@ -349,6 +358,7 @@ p
 //b-catalog-item
 .b-catalog-item
 	display: flex
+	margin-top: 10px
 	margin-bottom: 30px
 .b-catalog-item__body
 	display: flex
@@ -598,5 +608,27 @@ p
 .rental-roperty-path__numbers
 	font: 12px/1.2 $Raleway-SemiBold
 	color: $gray7
+
+
+
+//  b-preview-review
+.b-preview-review
+	margin-bottom: 30px
+.b-preview-review__name
+	display: inline-block
+	margin-bottom: 4px
+	color: $black
+	font: 16px/24px $RobotoSlab
+	transition: 0.3s
+	&:hover
+		text-decoration: none
+		color: $red
+.b-preview-review__txt
+	margin-bottom: 4px
+.b-preview-review__date
+	font-size: 13px
+	color: $gray9
+
+
 
 @import "media" // Always at the end
