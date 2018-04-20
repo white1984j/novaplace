@@ -24,7 +24,7 @@ body
 	min-width: 320px
 	position: relative
 	font-size: 15px
-	line-height: 1.45
+	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6
 	font-family: $RobotoSlab
 	color: $black
 h2
+	margin-bottom: 15px
 	font-size: 30px
 	font-weight: normal
 	line-height: 1.3
@@ -67,6 +68,12 @@ b, strong
 p
 	margin-bottom: 0
 
+.mar-b-30
+	margin-bottom: 30px
+
+.min-h-100
+	min-height: 100%
+
 .slick-slider
 	img
 		max-width: 100%
@@ -78,12 +85,12 @@ p
 	flex: 0 0 340px
 	max-width: 340px
 
-.no-gutters > .content-bg,
 .content-bg
-	padding-left: 30px
-	padding-right: 30px
 	flex: 0 0 calc(100% - 340px)
 	max-width: calc(100% - 340px)
+.content-bg
+.no-gutters > .content-bg,
+	padding: 0 30px
 
 .flex-nowrap
 	flex-wrap: nowrap
@@ -93,16 +100,16 @@ p
 .container.no-gutters
 	padding: 0
 	margin: auto
+.no-gutters > .b-content,
 .b-content
-	padding-top: 30px
-	padding-bottom: 30px
+	padding: 30px
 	background: $gray3
 .b-content__path
 	margin-bottom: 50px
 
 .btn
 	display: inline-flex
-	padding: 11px 30px
+	padding: 8px 24px
 	border-radius: 30px
 	border: 2px solid
 	transition: 0.2s
@@ -111,6 +118,7 @@ p
 	text-align: center
 	align-items: center
 	justify-content: center
+	white-space: nowrap
 .btn--red
 	background: $red
 	border-color: $red
@@ -127,8 +135,6 @@ p
 		text-decoration: none
 		background: none
 		color: $blue-btn
-.btn--sm
-	padding: 8px 26px
 .btn--bg
 	padding: 13px 30px
 	background: $red
@@ -189,22 +195,26 @@ p
 	padding: 30px
 	background: $white
 .white-block__title
-	margin-bottom: 15px
+	text-transform: uppercase
+	margin-bottom: 25px
 	font: 16px/1.3 $RobotoSlab
 	font-weight: bold
 .gray-block
 	padding: 30px
 	background: $gray8
 .gray-block__title
-	margin-bottom: 15px
+	text-transform: uppercase
+	margin-bottom: 25px
 	font: 16px/1.3 $RobotoSlab
 	font-weight: bold
 
 
 // header
 .b-header
+	position: relative
 	padding: 25px 0
 	box-shadow: 0 2px 8px -3px rgba(0,0,0,0.6)
+	z-index: 1
 .b-header__logo
 	padding: 0 30px
 .link-tel
@@ -218,7 +228,7 @@ p
 .b-header-top-line
 	margin-bottom: 20px
 .b-header-link
-	margin-right: 30px
+	margin-right: 60px
 
 //nav
 .b-nav
@@ -227,7 +237,8 @@ p
 	margin-bottom: 0
 .b-nav__li
 	display: inline-block
-	margin-right: 75px
+	&:not(:last-child)
+		margin-right: 75px
 .b-nav__link
 	font-size: 15px
 	color: $blue
@@ -263,7 +274,7 @@ p
 
 //sidebar
 .b-sidebar
-	padding: 30px
+	padding: 55px 30px
 	background: $blue-btn
 	color: #fff
 .b-sidebar__head
@@ -333,7 +344,7 @@ p
 		top: 0
 		width: 100%
 		height: 100%
-		background: rgba(32,37,66,0.35)
+		background: rgba(32,37,66,0.65)
 		transition: 0.3s
 	&:hover
 		&:after,
@@ -358,7 +369,6 @@ p
 //b-catalog-item
 .b-catalog-item
 	display: flex
-	margin-top: 10px
 	margin-bottom: 30px
 .b-catalog-item__body
 	display: flex
@@ -538,6 +548,7 @@ p
 //b-catalog-item--grid
 .b-products--grid
 	display: flex
+	flex-wrap: wrap
 	margin-left: -25px
 	margin-right: -25px
 	flex-wrap: wrap
@@ -600,23 +611,33 @@ p
 		.rental-roperty-path__name
 			color: $red
 .rental-roperty-path__img
-	margin-bottom: 10px
+	margin-bottom: 25px
 .rental-roperty-path__name
-	font: 15px/1.2 $Raleway-SemiBold
+	margin-bottom: 2px
+	font: 15px/1.1 $Raleway-SemiBold
 	color: $blue
 	transition: 0.3s
 .rental-roperty-path__numbers
+	margin-bottom: 6px
 	font: 12px/1.2 $Raleway-SemiBold
 	color: $gray7
 
 
 
 //  b-preview-review
+.b-preview-review-wrap
+	display: flex
+	flex-wrap: wrap
+	margin-left: -15px
+	margin-right: -15px
 .b-preview-review
+	padding: 0 15px
 	margin-bottom: 30px
+	flex: 0 0 50%
+	max-width: 50%
 .b-preview-review__name
 	display: inline-block
-	margin-bottom: 4px
+	margin-bottom: 6px
 	color: $black
 	font: 16px/24px $RobotoSlab
 	transition: 0.3s
@@ -624,11 +645,87 @@ p
 		text-decoration: none
 		color: $red
 .b-preview-review__txt
-	margin-bottom: 4px
+	margin-bottom: 12px
 .b-preview-review__date
 	font-size: 13px
 	color: $gray9
 
+
+//b-banners
+.banner
+	padding: 40px 45px
+	min-height: 320px
+	background-repeat: no-repeat
+	background-size: cover
+
+.banner-all-news
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: flex-start
+	color: $white
+.banner-all-news__title
+	margin-bottom: 14px
+	font: 20px/24px $RobotoSlab
+	color: $white
+.banner-all-news__txt
+	margin-bottom: 14px
+.banner-all-news__date
+	margin-bottom: 15px
+.banner-all-news .btn
+	margin-top: 10px
+
+.banner-request-call
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	background: $blue-btn
+	color: $white
+.banner-request-call__title
+	font: 16px/1.3 $RobotoSlab
+	font-weight: bold
+.banner-request-call__input
+	margin: 15px 0
+	padding: 10px 0
+	background: none
+	border: none
+	border-bottom: 1px solid $blue4
+	color: $white
+	font-size: 15px
+
+
+.b-footer
+	display: flex
+	position: relative
+	padding-top: 25px
+	border-top: 1px solid $gray11
+	justify-content: space-between
+	align-items: center
+	&:after
+		content: ""
+		display: block
+		position: absolute
+		left: 0
+		bottom: 100%
+		width: 95px
+		height: 1px
+		background: $red
+.b-footer__menu
+	display: flex
+	justify-content: space-around
+	list-style: none
+	padding: 0
+	margin: 0
+	flex: 1 1 auto
+.b-footer__link
+	display: inline-block
+	padding: 0px 12px
+	color: $blue
+	&:hover
+		text-decoration: none
+		color: $red
+.b-footer__menu--info
+	display: none
 
 
 @import "media" // Always at the end
