@@ -14,7 +14,6 @@ textarea:hover::placeholder
 	color: transparent
 
 
-
 // ::selection
 // 	background-color: $accent
 // 	color: #fff
@@ -209,14 +208,81 @@ p
 	font-weight: bold
 
 
+//hamburger
+.b-hamburger
+	display: inline-flex
+	flex-direction: column
+	padding: 0
+	margin: 0
+	border: none
+	outline: none
+	background: none
+	&:focus
+		outline: none
+	&.open
+		.b-hamburger__path:nth-child(1)
+			animation: rotate-b-hamburger-path-1 0.5s
+			animation-fill-mode: forwards
+		.b-hamburger__path:nth-child(2)
+			opacity: 0
+		.b-hamburger__path:nth-child(3)
+			animation: rotate-b-hamburger-path-2 0.5s
+			animation-fill-mode: forwards
+.b-hamburger__path
+	display: inline-block
+	position: relative
+	top: 0
+	width: 46px
+	height: 4px
+	border-radius: 4px
+	background: $blue-btn
+	transition: 0.3s
+	transform: translateX(0) rotate(0)
+	& + .b-hamburger__path
+		margin-top: 10px
+@keyframes rotate-b-hamburger-path-1
+	0
+		transform: translateY(14px)
+	30%
+		transform: translateY(14px)
+	60%
+		transform: translateY(14px)
+	100%
+		transform: translateY(14px) rotate(45deg)
+@keyframes rotate-b-hamburger-path-2
+	0
+		transform: translateY(-14px)
+	30%
+		transform: translateY(-14px)
+	60%
+		transform: translateY(-14px)
+	100%
+		transform: translateY(-14px) rotate(-45deg)
+
+
+
+
+//mob menu
+.b-mob-menu
+	position: absolute
+	top: calc(100% + 15px)
+	left: -15px
+	width: calc(100% + 30px)
+	background: $blue5
+	z-index: 1
+
+
 // header
 .b-header
 	position: relative
 	padding: 25px 0
 	box-shadow: 0 2px 8px -3px rgba(0,0,0,0.6)
-	z-index: 1
+	z-index: 2
 .b-header__logo
 	padding: 0 30px
+	max-width: 100%
+	img
+		max-width: 100%
 .link-tel
 	font-size: 16px
 	font-family: $RobotoSlab
@@ -226,7 +292,9 @@ p
 		text-decoration: none
 		color: $red
 .b-header-top-line
+	position: relative
 	margin-bottom: 20px
+	z-index: 1
 .b-header-link
 	margin-right: 60px
 
@@ -356,6 +424,7 @@ p
 	position: absolute
 	left: 50%
 	top: 50%
+	min-width: 200px
 	transform: translateX(-50%) translateY(-50%)
 	font-family: $Raleway-SemiBold
 	font-size: 20px
@@ -728,4 +797,4 @@ p
 	display: none
 
 
-@import "media" // Always at the end
+@import "media"

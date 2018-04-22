@@ -41,35 +41,209 @@
 					</div>
 					<div class="col content-bg">
 						<div class="b-header-top-line row justify-content-between align-items-center">
-							<div class="col-auto">
-								<ul class="b-nav">
-									<li class="b-nav__li">
-										<a href="#" class="b-nav__link">О компании</a>
-									</li>
-									<li class="b-nav__li">
-										<a href="#" class="b-nav__link">Новости</a>
-									</li>
-									<li class="b-nav__li">
-										<a href="#" class="b-nav__link">Отзывы</a>
-									</li>
-									<li class="b-nav__li">
-										<a href="#" class="b-nav__link">Контакты</a>
-									</li>
-								</ul>
+							<div class="col-sm-3 col-5 d-lg-none">
+								<div class="b-header__logo">
+									<a href="/">
+										<img src="img/logo.png" alt="logo">
+									</a>
+								</div>
 							</div>
 							<div class="col-auto">
-								<a href="tel:89032928968" class="link-tel b-header-link">8-903-292-89-68</a>
-								<a href="#" class="btn btn--bg btn--red">Оставить заявку</a>
+								<div class="d-inline-flex d-md-none">
+									<button>search</button>
+								</div>
+								<div class="d-none d-md-inline-flex">
+									<ul class="b-nav">
+										<li class="b-nav__li">
+											<a href="#" class="b-nav__link">О компании</a>
+										</li>
+										<li class="b-nav__li">
+											<a href="#" class="b-nav__link">Новости</a>
+										</li>
+										<li class="b-nav__li">
+											<a href="#" class="b-nav__link">Отзывы</a>
+										</li>
+										<li class="b-nav__li">
+											<a href="#" class="b-nav__link">Контакты</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-auto d-inline-flex align-items-center">
+								<a href="tel:89032928968" class="link-tel b-header-link d-none d-md-inline-flex">8-903-292-89-68</a>
+								<a href="#" class="btn btn--bg btn--red d-none d-lg-inline-flex">Оставить заявку</a>
+								<button class="b-hamburger js-toggle-mob-menu d-lg-none">
+									<span class="b-hamburger__path"></span>
+									<span class="b-hamburger__path"></span>
+									<span class="b-hamburger__path"></span>
+								</button>
+							</div>
+							<div class="b-mob-menu d-lg-none" style="display: none">
+								<div class="b-sidebar">
+									<div class="b-sidebar__head">
+										<a href="#" class="btn btn--bg btn--red w-100">Каталог недвижимости</a>
+									</div>
+									<div class="b-sidebar-path">
+										<div class="b-sidebar-path__header">
+											<a href="#">Аренда офиса</a>
+											<button class="b-sidebar-path__btn">
+												<i class="icon icon-arrow-white"></i>
+											</button>
+										</div>
+										<div class="b-sidebar-path__body">
+											<ul class="b-sidebar-path__list">
+												<li><a href="#">#1</a></li>
+												<li><a href="#">#2</a></li>
+												<li><a href="#">#3</a></li>
+												<li><a href="#">#4</a></li>
+												<li><a href="#">#5</a></li>
+												<li><a href="#">#6</a></li>
+												<li><a href="#">#7</a></li>
+												<li><a href="#">#8</a></li>
+												<li><a href="#">#9</a></li>
+												<li><a href="#">#10</a></li>
+												<li><a href="#">#11</a></li>
+												<li><a href="#">#12</a></li>
+												<li><a href="#">#13</a></li>
+												<li><a href="#">#14</a></li>
+												<li><a href="#">#15</a></li>
+												<li><a href="#">#16</a></li>
+												<li><a href="#">#17</a></li>
+												<li><a href="#">#18</a></li>
+												<li><a href="#">#19</a></li>
+												<li><a href="#">#20</a></li>
+												<li><a href="#">#21</a></li>
+												<li><a href="#">#22</a></li>
+												<li><a href="#">#23</a></li>
+												<li><a href="#">#24</a></li>
+												<li><a href="#">#25</a></li>
+												<li><a href="#">#26</a></li>
+												<li><a href="#">#27</a></li>
+												<li><a href="#">#28</a></li>
+												<li><a href="#">#29</a></li>
+												<li><a href="#">#30</a></li>
+												<li><a href="#">#31</a></li>
+												<li><a href="#">#32</a></li>
+												<li><a href="#">#33</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="b-sidebar-path active">
+										<div class="b-sidebar-path__header">
+											<a href="#">Аренда офиса с юридическим офисом</a>
+											<button class="b-sidebar-path__btn">
+												<i class="icon icon-arrow-white"></i>
+											</button>
+										</div>
+										<div class="b-sidebar-path__body" style="display: block">
+											<ul class="b-sidebar-path__list">
+												<li><a href="#">#1</a></li>
+												<li><a href="#">#2</a></li>
+												<li><a href="#">#3</a></li>
+												<li><a href="#">#4</a></li>
+												<li><a href="#">#5</a></li>
+												<li><a href="#">#6</a></li>
+												<li><a href="#">#7</a></li>
+												<li><a href="#">#8</a></li>
+												<li><a href="#">#9</a></li>
+												<li><a href="#">#10</a></li>
+												<li><a href="#">#11</a></li>
+												<li><a href="#">#12</a></li>
+												<li><a href="#">#13</a></li>
+												<li><a href="#">#14</a></li>
+												<li><a href="#">#15</a></li>
+												<li><a href="#">#16</a></li>
+												<li><a href="#">#17</a></li>
+												<li><a href="#">#18</a></li>
+												<li><a href="#">#19</a></li>
+												<li><a href="#">#20</a></li>
+												<li><a href="#">#21</a></li>
+												<li><a href="#">#22</a></li>
+												<li><a href="#">#23</a></li>
+												<li><a href="#">#24</a></li>
+												<li><a href="#">#25</a></li>
+												<li><a href="#">#26</a></li>
+												<li><a href="#">#27</a></li>
+												<li><a href="#">#28</a></li>
+												<li><a href="#">#29</a></li>
+												<li><a href="#">#30</a></li>
+												<li><a href="#">#31</a></li>
+												<li><a href="#">#32</a></li>
+												<li><a href="#">#33</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="b-sidebar-path">
+										<div class="b-sidebar-path__header">
+											<a href="#">Здания и особняки</a>
+										</div>
+									</div>
+									<div class="b-sidebar-path">
+										<div class="b-sidebar-path__header">
+											<a href="#">Аренда склада</a>
+										</div>
+									</div>
+									<div class="b-sidebar-path">
+										<div class="b-sidebar-path__header">
+											<a href="#">Помещение свободного назначения</a>
+										</div>
+									</div>
+									<div class="b-sidebar-path">
+										<div class="b-sidebar-path__header">
+											<a href="#">Продажа</a>
+											<button class="b-sidebar-path__btn">
+												<i class="icon icon-arrow-white"></i>
+											</button>
+										</div>
+										<div class="b-sidebar-path__body">
+											<ul class="b-sidebar-path__list">
+												<li><a href="#">#1</a></li>
+												<li><a href="#">#2</a></li>
+												<li><a href="#">#3</a></li>
+												<li><a href="#">#4</a></li>
+												<li><a href="#">#5</a></li>
+												<li><a href="#">#6</a></li>
+												<li><a href="#">#7</a></li>
+												<li><a href="#">#8</a></li>
+												<li><a href="#">#9</a></li>
+												<li><a href="#">#10</a></li>
+												<li><a href="#">#11</a></li>
+												<li><a href="#">#12</a></li>
+												<li><a href="#">#13</a></li>
+												<li><a href="#">#14</a></li>
+												<li><a href="#">#15</a></li>
+												<li><a href="#">#16</a></li>
+												<li><a href="#">#17</a></li>
+												<li><a href="#">#18</a></li>
+												<li><a href="#">#19</a></li>
+												<li><a href="#">#20</a></li>
+												<li><a href="#">#21</a></li>
+												<li><a href="#">#22</a></li>
+												<li><a href="#">#23</a></li>
+												<li><a href="#">#24</a></li>
+												<li><a href="#">#25</a></li>
+												<li><a href="#">#26</a></li>
+												<li><a href="#">#27</a></li>
+												<li><a href="#">#28</a></li>
+												<li><a href="#">#29</a></li>
+												<li><a href="#">#30</a></li>
+												<li><a href="#">#31</a></li>
+												<li><a href="#">#32</a></li>
+												<li><a href="#">#33</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 						<div class="row align-items-end">
-							<div class="col-auto">
-								<a href="#" class="btn btn--bg btn--filter">
+							<div class="col-md-auto col-sm-12">
+								<a href="#" class="btn btn--bg btn--filter w-sm-100">
 									<i class="icon icon-filter-white"></i>
 									<span>Фильтр</span>
 								</a>
 							</div>
-							<div class="col">
+							<div class="col d-md-inline-flex d-none">
 								<form class="b-search">
 									<input type="text" class="b-search__input" placeholder="Поиск по сайту">
 									<button type="submit" class="b-search__submit icons-hover"  >
@@ -694,8 +868,8 @@
 
 							<div class="b-content__path">
 								<div class="row">
-									<div class="col-lg-6 ">
-										<div class="gray-block d-flex flex-column justify-content-between min-h-100">
+									<div class="col-lg-6 mar-b-sm-50">
+										<div class="gray-block d-flex flex-column justify-content-between min-h-100 ">
 											<h4 class="gray-block__title">Отзывы</h4>
 											<div class="b-preview-review-wrap">
 													<div class="b-preview-review">
@@ -722,7 +896,7 @@
 									<div class="col-lg-6">
 										<div class="row min-h-100">
 											<div class="col-xlg-6 col-xl-12">
-												<div class="banner banner-all-news mar-b-xlg-30" style="background-image: url(img/banners/banner-all-news.png);">
+												<div class="banner banner-all-news mar-b-xlg-30 mar-b-sm-50" style="background-image: url(img/banners/banner-all-news.png);">
 													<div class="banner-all-news__title">У кого в Москве самые комфортные офисы?</div>
 													<div class="banner-all-news__txt">Помещение под офис необходимо выбирать с учетом специфики</div>
 													<div class="banner-all-news__date">12 марта 2018</div>

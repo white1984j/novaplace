@@ -22,7 +22,6 @@ $(function () {
 	});
 
 	$('.metro-stations').each(function () {
-
 		var $wrap = $(this),
 
 		//wrapWidth = Math.ceil( $wrap.width() ),
@@ -50,5 +49,10 @@ $(function () {
 		$body.on('scroll', function () {
 			checkScroll();
 		});
+	});
+
+	$('.js-toggle-mob-menu').on("click", function () {
+		$(this).toggleClass('open');
+		$('.b-mob-menu').slideToggle();
 	});
 });

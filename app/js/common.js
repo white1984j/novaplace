@@ -27,7 +27,6 @@ $(function() {
 
 
 	$('.metro-stations').each( function() {
-		
 		let $wrap = $(this),
 				//wrapWidth = Math.ceil( $wrap.width() ),
 				$body =  $wrap.find('.metro-stations__body'),
@@ -53,7 +52,13 @@ $(function() {
 
 		$body.on('scroll', function() {
 			checkScroll()
-		} );
+		});
 	});
+
+
+	$('.js-toggle-mob-menu').on("click", function() {
+		$(this).toggleClass('open');
+		$('.b-mob-menu').slideToggle();
+	})
 
 });
