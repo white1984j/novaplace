@@ -53,8 +53,8 @@
 		flex-basis: 25%
 		max-width: 25%
 		min-height: 210px
-	.b-footer__link
-		font-size: 13px
+	// .b-footer__link
+	// 	font-size: 13px
 	.b-nav__li:not(:last-child)
 		margin-right: 15px
 	.b-header-link
@@ -77,6 +77,10 @@
 	.content-bg
 		flex-basis: 100%
 		max-width: 100%
+	.b-sidebar
+		padding-bottom: 10px
+	.b-mob-menu__body
+		padding: 25px 25px 25px
 		
 // ≥768px
 +media-breakpoint-down(sm)
@@ -90,14 +94,19 @@
 	.no-gutters>.b-content
 		padding: 15px
 	.b-header
-		padding: 15px 0
+		margin-bottom: 10px
+		padding: 10px 0 30px
 	.b-header-top-line
 		margin-bottom: 15px
+	.b-header-link
+		display: inline-block
+		margin-right: 0
+		margin-bottom: 20px
 	.b-mob-menu
 		left: 0px
 		width: 100%
 	.b-sidebar
-		padding: 35px 15px
+		padding: 35px 15px 10px
 	.b-sidebar__head
 		margin-bottom: 10px
 	.b-header__logo
@@ -105,12 +114,25 @@
 	.b-footer
 		flex-direction: column
 		align-items: center
+		text-align: center
 		& > *
 		  margin: 10px 0
 	.rental-roperty-path
 		flex-basis: 50%
 		max-width: 50%
-
+	.b-footer__link
+		margin-bottom: 12px
+	.b-mob-menu__body
+		padding: 25px 15px
+	.b-nav
+		margin-bottom: 25px
+	.b-nav__li
+		display: block
+		&:not(:last-child)
+			margin-right: 0
+			margin-bottom: 20px
+	.b-nav__link
+		color: $white
 
 
 
@@ -121,6 +143,8 @@
 		padding: 0
 		justify-content: center
 		align-items: center
+		.icon
+			margin: 0
 	.icon
 		margin: 0
 	span

@@ -55,4 +55,38 @@ $(function () {
 		$(this).toggleClass('open');
 		$('.b-mob-menu').slideToggle();
 	});
+
+	function productGridSlider() {
+		if ($(window).width() < 1500) {
+			if ($('.b-products--grid').hasClass('slick-initialized')) return;
+			$('.b-products--grid').slick({
+				slidesToShow: 4,
+				arrows: false,
+				dots: true,
+				responsive: [{
+					breakpoint: 1200,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+			});
+		} else if ($('.b-products--grid').hasClass('slick-initialized')) {
+			$('.b-products--grid').slick('unslick');
+		}
+	}
+	productGridSlider();
+	$(window).resize(function () {
+		console.log('resize');
+		productGridSlider();
+	});
 });
