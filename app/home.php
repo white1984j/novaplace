@@ -111,6 +111,11 @@
 						<? include('sidebar.php'); ?>
 					</div>
 					<div class="col content-bg b-content">
+						<div class="pos-r">	
+							<div class="b-filter">
+								<? include('filter.php') ?>
+							</div>
+						</div>
 						<main class="">
 							<div class="">
 								<div class="row">

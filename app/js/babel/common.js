@@ -86,7 +86,25 @@ $(function () {
 	}
 	productGridSlider();
 	$(window).resize(function () {
-		console.log('resize');
 		productGridSlider();
+	});
+
+	// select styler
+	$('.js-select-styler').select2({
+		closeOnSelect: false
+	});
+	$('.b-filter').on('scroll', function () {
+		$('.js-select-styler').select2("close");
+	});
+
+	// filter
+	$('.btn--filter').on("click", function (e) {
+		e.preventDefault();
+		$(this).toggleClass('active');
+		$('.b-filter').slideToggle();
+	});
+
+	$('.b-filter__back').on("click", function () {
+		$('.b-filter').slideUp();
 	});
 });

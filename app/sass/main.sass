@@ -58,6 +58,9 @@ h4
 .text-center
 	text-align: center
 
+label
+  margin-bottom: 0  
+
 b, strong
 	font-weight: bold
 
@@ -101,6 +104,12 @@ p
 		background: $gray12
 		transition: 0.3s
 
+.row.gutters-5
+	margin-left: -5px
+	margin-right: -5px
+	& > *[class^="col"]
+		padding: 0 5px
+
 .txt-c
 	text-align: center
 
@@ -125,10 +134,14 @@ p
 	margin: auto
 .no-gutters > .b-content,
 .b-content
+	position: relative
 	padding: 30px
 	background: $gray3
 .b-content__path
 	margin-bottom: 50px
+
+.pos-r
+	position: relative
 
 .btn
 	display: inline-flex
@@ -142,6 +155,7 @@ p
 	align-items: center
 	justify-content: center
 	white-space: nowrap
+	cursor: pointer	
 .btn--red
 	background: $red
 	border-color: $red
@@ -158,6 +172,13 @@ p
 		text-decoration: none
 		background: none
 		color: $blue-btn
+.btn--hov-blue
+	background: none
+	border-color: $blue-btn
+	color: $blue-btn
+	&:hover
+		color: $white
+		background: $blue-btn
 .btn--bg
 	padding: 13px 30px
 	background: $red
@@ -170,7 +191,8 @@ p
 	border-color: $blue-btn
 	.icon
 		margin-right: 12px
-	&:hover
+	&:hover,
+	&.active
 		background: $red
 		border-color: $red
 		color: #fff
@@ -820,6 +842,211 @@ p
 		color: $red
 .b-footer__menu--info
 	display: none
+
+
+//form
+.b-label
+	display: block
+	margin-bottom: 30px	
+.b-label__txt
+	display: block	
+	margin-bottom: 5px	
+.b-input
+	display: block
+	width: 100%
+	padding: 6px 12px
+	border: 1px solid $gray13
+	border-radius: 30px
+	background: none
+.b-input__m-b
+	margin-bottom: 10px
+
+
+//filter
+.b-filter
+	display: none
+	width: 992px	
+	max-width: 100%
+	position: absolute
+	left: 0	
+	top: 0
+	border-top: 6px solid $blue6
+	box-shadow: 0 22px 24px 0 rgba(0,0,0,0.35)
+	z-index: 2
+	&:after
+		content: ""
+		display: inline-block
+		position: absolute
+		bottom: calc(100% + 6px)
+		left: 110px
+		width: 0
+		height: 0
+		border-left: 8px solid transparent
+		border-right: 8px solid transparent
+		border-bottom: 12px solid $blue6
+.b-filter__body
+	padding: 20px 45px
+	background: $white url('../img/filter-bg.png') no-repeat center
+	background-size: cover
+.b-filter__footer
+	border-top: 1px solid $gray15
+	padding: 20px 30px
+	background: $gray4
+	text-align: right	
+	.row
+		justify-content: flex-end
+	.btn
+		margin: 10px 0
+		min-width: 185px	
+
+.b-filter__back
+	display: flex
+	align-items: center	
+	padding: 12px 15px
+	background: $gray4
+	.icon
+		margin-right: 10px	
+		transform: rotate(180deg)
+
+.filter-select-class
+	display: inline-block
+	input[type="checkbox"]
+		display: none
+		&:checked + .filter-select-class__txt
+			background: $blue-btn
+			border-color: $blue-btn
+			color: $white
+.filter-select-class__txt
+	display: inline-flex
+	margin: 0px 2px 2px 0
+	min-width: 50px	
+	height: 40px
+	padding:	0 5px
+	align-items: center
+	justify-content: center
+	border-radius: 20px
+	border: 1px solid $gray13
+	text-transform: uppercase
+	font-family: $Raleway-SemiBold
+	cursor: pointer	
+	transition: 0.3s
+
+.b-select-location
+	display: inline-flex
+	flex-direction: column
+	padding: 25px	
+	width: 100%	
+	min-height: 100%
+	align-items: center
+	justify-content: center
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	color: $white
+	font-family: $Raleway-SemiBold
+	&:after
+		content: ""
+		display: inline-block	
+		position: absolute
+		left: 0	
+		top: 0	
+		width: 100%	
+		height: 100%
+		background: $blue7
+		opacity: 0.7
+		transition: 0.3s
+	& > *
+		position: relative	
+		z-index: 1	
+	&:hover
+		color: $white
+		text-decoration: none
+		&:after
+			opacity: 0.5
+	.icon
+		margin-bottom: 15px	
+
+.select2-container--default .select2-search--inline .select2-search__field
+	margin-top: 0	
+.select2-search.select2-search--dropdown
+	display: none
+.select2-container .select2-selection--single
+	height: auto	
+.select2-container--default .select2-selection--single .select2-selection__arrow
+	b
+		display: none	
+	top: 7px
+	right: 10px	
+	background: url('../img/arrow-black.png') no-repeat center
+	transform: rotate(90deg)
+.select2-container--default .select2-selection--single .select2-selection__rendered
+	color: $black
+	font-family: $Raleway-SemiBold
+.select2-container
+	min-width: 100%
+.select2-container,
+.selection,
+.select2-selection
+	outline: (none !important)
+span.select2-selection
+	padding: (7px 7px !important)
+	border: (1px solid $gray13 !important)
+	border-radius: (30px !important)
+	overflow: hidden
+	background: (none !important)
+ul.select2-selection__rendered
+	display: (flex !important)
+	border-radius: (30px !important)
+	overflow: hidden
+	padding: (0 !important)			
+	white-space: nowrap
+	li
+		margin: (0 6px 0 0 !important)
+		padding: (0px 12px !important)
+		border-radius: (30px !important)
+.select2-dropdown
+	padding: 15px 25px
+	border-radius: (30px !important)
+	border: (none !important)
+	background: ($gray8 !important)
+	box-shadow: 0 22px 24px 0 rgba(0,0,0,0.35)
+ul.select2-results__options
+	li
+		position: relative
+		padding: 5px 0
+		color: ($text !important)
+		background: (none !important)
+		font-size: 13px	
+		&:before
+			content: ""
+			display: inline-block
+			position: relative
+			top: 3px
+			width: 17px
+			height: 17px
+			margin-right: 9px
+			border-radius: 4px
+			background: $gray14
+		&[aria-selected="true"]
+			background: (none !important)
+			color: ($black !important)
+			font-weight: bold
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				top: 9px
+				display: inline-block
+				width: 17px
+				height: 17px
+				background: url('../img/checked--red.png') no-repeat center
+		&.select2-results__option--highlighted
+			font-weight: (bold !important)
+
+
+
+
+
 
 
 @import "media"

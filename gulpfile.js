@@ -10,6 +10,10 @@ var gulp          = require('gulp'),
 		rename        = require('gulp-rename'),
 		autoprefixer  = require('gulp-autoprefixer'),
 		notify        = require("gulp-notify"),
+		ftp           = require('vinyl-ftp'),
+		imagemin      = require('gulp-imagemin'),
+		del           = require('del'),
+		cache          = require('gulp-cache'),
 		rsync         = require('gulp-rsync'),
 		spritesmith   = require('gulp.spritesmith'),
 		babel         = require('gulp-babel');
@@ -46,6 +50,7 @@ gulp.task('js', ['commonjs'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
+		'app/libs/select2/dist/js/select2.min.js',
 		'app/js/babel/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
@@ -82,5 +87,55 @@ gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
 	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.php', browsersync.reload)
 });
+
+
+gulp.task('build', ['removedist', 'imagemin', 'styles', 'js'], function() {
+
+	var buildFiles = gulp.src([
+		'app/*.php',
+		'app/.htaccess',
+		]).pipe(gulp.dest('dist'));
+
+	var buildCss = gulp.src([
+		'app/css/main.min.css',
+		]).pipe(gulp.dest('dist/css'));
+
+	var buildJs = gulp.src([
+		'app/js/scripts.min.js',
+		]).pipe(gulp.dest('dist/js'));
+
+	var buildFonts = gulp.src([
+		'app/fonts/**/*',
+		]).pipe(gulp.dest('dist/fonts'));
+
+});
+
+gulp.task('deploy', function() {
+
+	var conn = ftp.create({
+		host:      '',
+		user:      '',
+		password:  '',
+		parallel:  10,
+		log: gutil.log
+	});
+
+	var globs = [
+	'dist/**',
+	'dist/.htaccess',
+	];
+	return gulp.src(globs, {buffer: false})
+	.pipe(conn.dest('/path/to/folder/on/server'));
+
+});
+
+gulp.task('imagemin', function() {
+	return gulp.src('app/img/**/*')
+	.pipe(cache(imagemin())) // Cache Images
+	.pipe(gulp.dest('dist/img')); 
+});
+
+gulp.task('removedist', function() { return del.sync('dist'); });
+gulp.task('clearcache', function () { return cache.clearAll(); });
 
 gulp.task('default', ['watch']);

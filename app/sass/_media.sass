@@ -59,6 +59,8 @@
 		margin-right: 15px
 	.b-header-link
 		margin-right: 15px
+	.b-filter__body
+		padding: 20px 35px
 
 
 @media only screen and (max-width : 1100px)
@@ -133,6 +135,12 @@
 			margin-bottom: 20px
 	.b-nav__link
 		color: $white
+	.b-filter__body
+		padding: 15px 15px 10px
+	.b-filter__footer
+		text-align: center
+		.row
+			justify-content: center
 
 
 
@@ -145,10 +153,10 @@
 		align-items: center
 		.icon
 			margin: 0
-	.icon
-		margin: 0
-	span
-		display: none
+		span
+			display: none
+	.b-filter:after
+		left: 20px
 
 
 // ≥576px
@@ -162,6 +170,13 @@
 		border-top: 1px solid $gray6
 	.rental-roperty-path:not(:last-child)
 		margin-bottom: 25px
+	.b-filter
+		position: fixed	
+		top: 0	
+		width: 100vw
+		height: 100vh
+		overflow: scroll
+		border-top: none
 
 
 /*==========  Mobile First  ==========*/
