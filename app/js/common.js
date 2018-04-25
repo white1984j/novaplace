@@ -34,6 +34,12 @@ $(function() {
 				maxScroll = $body[0].scrollWidth,
 				scrollLeft = 0;
 
+		function calcProp(){
+			bodyWidth = Math.ceil( $body.width() ),
+			maxScroll = $body[0].scrollWidth,
+			scrollLeft = 0;
+		}
+
 		$wrap.find('.metro-stations__scroll-l').on('click', function() {
 			$body.animate({ scrollLeft: scrollLeft - 100 }, 200)
 		});
@@ -51,7 +57,12 @@ $(function() {
 		checkScroll()
 
 		$body.on('scroll', function() {
-			checkScroll()
+			calcProp();
+			checkScroll();
+		});
+
+		$(window).on('scroll', function() {
+			calcProp();
 		});
 	});
 
@@ -64,9 +75,9 @@ $(function() {
 
 	function productGridSlider(){
 		if( $(window).width() < 1500 ){
-			if( $('.b-products--grid').hasClass('slick-initialized') )
+			if( $('.b-products--grid-slider').hasClass('slick-initialized') )
 				return;
-			$('.b-products--grid').slick({
+			$('.b-products--grid-slider').slick({
 				slidesToShow: 4,
 				arrows: false,
 				dots: true,
@@ -89,8 +100,8 @@ $(function() {
 					}
 				]
 			})
-		}else if( $('.b-products--grid').hasClass('slick-initialized') ){
-			$('.b-products--grid').slick('unslick');
+		}else if( $('.b-products--grid-slider').hasClass('slick-initialized') ){
+			$('.b-products--grid-slider').slick('unslick');
 		}
 	}
 	productGridSlider()
@@ -123,5 +134,16 @@ $(function() {
 		$('.b-filter').slideUp()
 	});
 
+
+
+	//change view catalog
+	$('.b-change-catalog__item--line').on("click", function() {
+		$('.b-products').removeClass('b-products--grid');
+		$('.slick-slider').slick('setPosition');
+	});
+	$('.b-change-catalog__item--grid').on("click", function() {
+		$('.b-products').addClass('b-products--grid');
+		$('.slick-slider').slick('setPosition');
+	});
 
 });

@@ -18,31 +18,43 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 */
 .icon-arrow-black {
   background-image: url(sprite.png);
-  background-position: -93px -27px;
+  background-position: -118px -25px;
   width: 6px;
   height: 9px;
 }
 .icon-arrow-red {
   background-image: url(sprite.png);
-  background-position: -93px -36px;
+  background-position: -118px -16px;
   width: 6px;
   height: 9px;
 }
 .icon-arrow-white {
   background-image: url(sprite.png);
-  background-position: -9px -89px;
+  background-position: -108px -35px;
   width: 9px;
   height: 6px;
 }
+.icon-catalog--grid {
+  background-image: url(sprite.png);
+  background-position: -99px -16px;
+  width: 19px;
+  height: 19px;
+}
+.icon-catalog--line {
+  background-image: url(sprite.png);
+  background-position: -72px -27px;
+  width: 27px;
+  height: 19px;
+}
 .icon-checked--red {
   background-image: url(sprite.png);
-  background-position: 0px -89px;
+  background-position: -99px -35px;
   width: 9px;
   height: 7px;
 }
 .icon-filter-white {
   background-image: url(sprite.png);
-  background-position: -72px -69px;
+  background-position: -99px 0px;
   width: 26px;
   height: 16px;
 }
@@ -60,13 +72,13 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-loupe-blue {
   background-image: url(sprite.png);
-  background-position: -72px -27px;
+  background-position: -72px -67px;
   width: 21px;
   height: 21px;
 }
 .icon-loupe-red {
   background-image: url(sprite.png);
-  background-position: -72px -48px;
+  background-position: -72px -46px;
   width: 21px;
   height: 21px;
 }

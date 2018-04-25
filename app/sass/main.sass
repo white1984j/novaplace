@@ -38,6 +38,11 @@ body
 h1,h2,h3,h4,h5,h6
 	font-family: $RobotoSlab
 	color: $black
+h1
+	margin-bottom: 15px
+	font-size: 36px
+	font-weight: normal
+	line-height: 1.3
 h2
 	margin-bottom: 15px
 	font-size: 30px
@@ -114,6 +119,9 @@ p
 
 .txt-c
 	text-align: center
+
+.disabled
+	pointer-events: none
 
 .content-sm
 	flex: 0 0 340px
@@ -241,6 +249,11 @@ p
 .white-block
 	padding: 30px
 	background: $white
+	.b-catalog-item
+		.b-catalog-item__prop
+			margin-bottom: 0
+		.b-catalog-item__result
+			background: none
 .white-block__title
 	text-transform: uppercase
 	margin-bottom: 25px
@@ -485,6 +498,38 @@ p
 
 
 //b-catalog-item
+
+.b-catalog-top-line
+	display: flex
+	align-items: center
+	margin: 25px -40px
+.b-catalog-top-line__path
+	padding: 5px 40px
+	&:last-child
+		margin-left: auto
+
+.b-change-catalog
+	display: flex
+	margin-left: -5px
+	margin-right: -5px
+	align-items: center
+.b-change-catalog__item
+	display: inline-flex
+	background: none
+	border: none
+	margin: 0 5px
+	&:focus
+		outline: none
+
+.b-catalog-sorting
+	display: flex
+	align-items: center
+	.select2-container
+		min-width: 210px
+.b-catalog-sorting__title
+	white-space: nowrap
+	margin-right: 8px
+
 .b-catalog-item
 	display: flex
 	margin-bottom: 30px
@@ -533,6 +578,9 @@ p
 .b-catalog-item__info
 	flex: 0 0 59%
 	max-width: 59%
+.b-catalog-item-img-slider
+	img
+		margin: auto
 .b-catalog-item-img-slider__numbers
 	display: flex
 	align-items: flex-end	
@@ -677,9 +725,11 @@ p
 		flex-direction: column
 		align-items: flex-start
 		justify-content: flex-start
-		padding: 0 25px
+		padding: 0 10px
 		flex: 0 0 calc(100% / 6)
 		max-width: calc(100% / 6)
+	.b-catalog-item__more-info
+		display: (none !important)
 	.b-catalog-item__body,
 	.b-catalog-item__result,
 	.b-catalog-item__img,
@@ -689,22 +739,21 @@ p
 		max-width: 100%
 	.b-catalog-item__body
 		flex-direction: column
+		padding: 15px
+		border-bottom: 1px solid $gray5
 	.b-catalog-item__img
 		margin-right: 0
 		margin-bottom: 12px
-	.b-catalog-item__body
-		padding: 0
-		margin-bottom: 17px
-		border-bottom: 1px solid $gray5
 	.b-catalog-item__name
 		margin-bottom: 4px
 		font-size: 15px
 		line-height: 20px
 	.b-catalog-item__result
-		padding: 0
+		padding: 15px
 		font-family: $Raleway
-		background: none
 		align-items: flex-start
+	.b-catalog-item__order
+		margin-top: 10px
 	.b-catalog-item__price
 		margin: 5px 0 0
 
@@ -889,6 +938,11 @@ p
 		border-left: 8px solid transparent
 		border-right: 8px solid transparent
 		border-bottom: 12px solid $blue6
+.b-filter--static
+	position: relative
+	display: block
+	margin-bottom: 40px
+	width: 100%
 .b-filter__body
 	padding: 20px 45px
 	background: $white url('../img/filter-bg.png') no-repeat center
@@ -982,10 +1036,13 @@ p
 .select2-container--default .select2-selection--single .select2-selection__arrow
 	b
 		display: none	
-	top: 7px
+	top: 10px
 	right: 10px	
 	background: url('../img/arrow-black.png') no-repeat center
 	transform: rotate(90deg)
+	transition: 0.3s
+.select2-container--default.select2-container--focus .select2-selection--single .select2-selection__arrow
+	transform: rotate(-90deg)
 .select2-container--default .select2-selection--single .select2-selection__rendered
 	color: $black
 	font-family: $Raleway-SemiBold
@@ -1052,6 +1109,28 @@ ul.select2-results__options
 			font-weight: (bold !important)
 
 
+
+//pagination
+.b-pagination
+	display: flex
+	align-items: center 
+	margin: 0px 0
+.b-pagination__title
+	margin-right: 4px
+.b-pagination__list
+	list-style: none
+	padding: 0px
+	margin: 0px
+.b-pagination__item
+	display: inline-block
+.b-pagination__link
+	display: inline-block
+	padding: 3px 10px
+	text-decoration: none
+	transition: 0.2s
+	&:hover
+		text-decoration: none
+		color: $red
 
 
 
