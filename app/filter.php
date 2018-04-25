@@ -10,7 +10,7 @@
 					<div class="col-sm-6 col-12">
 						<label class="b-label">
 							<p class="b-label__txt">Тип помещения</p>
-							<select class="js-select-styler" multiple="multiple" data-select-2="true">
+							<select class="js-select-styler" multiple="multiple" data-select-2="true" >
 								<option value="1">Тип помещения</option>
 								<option value="2">Тип помещения1</option>
 								<option value="3">Тип помещения2</option>

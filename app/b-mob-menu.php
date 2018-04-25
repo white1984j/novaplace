@@ -17,6 +17,6 @@
 											</li>
 										</ul>
 									</div>
-									<a href="#" class="btn btn--bg btn--red">Оставить заявку</a>
+									<a href="#" class="btn btn--bg btn--red ">Оставить заявку</a>
 								</div>
 							</div>

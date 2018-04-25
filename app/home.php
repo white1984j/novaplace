@@ -85,7 +85,7 @@
 						</div>
 						<div class="row align-items-end">
 							<div class="col-md-auto col-sm-12">
-								<a href="#" class="btn btn--bg btn--filter w-sm-100">
+								<a href="#" class="btn btn--bg btn--filter">
 									<i class="icon icon-filter-white"></i>
 									<span>Фильтр</span>
 								</a>
@@ -184,8 +184,9 @@
 															<div class="d-flex align-items-center">
 															Метро: 
 															<span class="metro-stations">
-																<button class="metro-stations__scroll-l">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-l icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 																<span class="metro-stations__body">
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
@@ -201,8 +202,9 @@
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																</span>
-																<button class="metro-stations__scroll-r">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-r icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 															</span>
 															</div>
@@ -243,8 +245,9 @@
 															<div class="d-flex align-items-center">
 															Метро: 
 															<span class="metro-stations">
-																<button class="metro-stations__scroll-l">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-l icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 																<span class="metro-stations__body">
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
@@ -260,8 +263,9 @@
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																</span>
-																<button class="metro-stations__scroll-r">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-r icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 															</span>
 															</div>
@@ -302,8 +306,9 @@
 															<div class="d-flex align-items-center">
 															Метро: 
 															<span class="metro-stations">
-																<button class="metro-stations__scroll-l">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-l icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 																<span class="metro-stations__body">
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
@@ -319,126 +324,9 @@
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																</span>
-																<button class="metro-stations__scroll-r">
-																	<i class="icon icon-arrow-black"></i>
-																</button>
-															</span>
-															</div>
-														</li>
-														<li>
-															<p>Площадь: 848 м²</p>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-catalog-item__result">
-												<p>Ставка аренды за м<sup>2</sup>/год</p>
-												<div class="b-catalog-item__price">
-													32 000 &#8381;
-												</div>
-											</div>
-										</div>
-										<div class="b-catalog-item ">
-											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
-													<a href="#">
-														<img src="img/products/catalog-item-1.png" alt="img">
-													</a>
-													<div class="b-catalog-item__lot">Лот: <span>376842</span></div>
-												</div>
-												<div class="b-catalog-item__info">
-													<div>		
-														<a href="#" class="b-catalog-item__name">Аренда офисов в бизнес-парке «Вымпел»</a>
-													</div>
-													<ul class="b-catalog-item__prop">
-														<li>
-															<p>Округ: ЦАО</p>
-														</li>
-														<li>
-															<p>Класс: В</p>
-														</li>
-														<li>
-															<div class="d-flex align-items-center">
-															Метро: 
-															<span class="metro-stations">
-																<button class="metro-stations__scroll-l">
-																	<i class="icon icon-arrow-black"></i>
-																</button>
-																<span class="metro-stations__body">
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																</span>
-																<button class="metro-stations__scroll-r">
-																	<i class="icon icon-arrow-black"></i>
-																</button>
-															</span>
-															</div>
-														</li>
-														<li>
-															<p>Площадь: 848 м²</p>
-														</li>
-													</ul>
-												</div>
-											</div>
-											<div class="b-catalog-item__result">
-												<p>Ставка аренды за м<sup>2</sup>/год</p>
-												<div class="b-catalog-item__price">
-													32 000 &#8381;
-												</div>
-											</div>
-										</div>
-										<div class="b-catalog-item ">
-											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
-													<a href="#">
-														<img src="img/products/catalog-item-1.png" alt="img">
-													</a>
-													<div class="b-catalog-item__lot">Лот: <span>376842</span></div>
-												</div>
-												<div class="b-catalog-item__info">
-													<div>		
-														<a href="#" class="b-catalog-item__name">Аренда офисов в бизнес-парке «Вымпел»</a>
-													</div>
-													<ul class="b-catalog-item__prop">
-														<li>
-															<p>Округ: ЦАО</p>
-														</li>
-														<li>
-															<p>Класс: В</p>
-														</li>
-														<li>
-															<div class="d-flex align-items-center">
-															Метро: 
-															<span class="metro-stations">
-																<button class="metro-stations__scroll-l">
-																	<i class="icon icon-arrow-black"></i>
-																</button>
-																<span class="metro-stations__body">
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
-																</span>
-																<button class="metro-stations__scroll-r">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-r icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 															</span>
 															</div>
@@ -479,8 +367,9 @@
 															<div class="d-flex align-items-center">
 															Метро: 
 															<span class="metro-stations">
-																<button class="metro-stations__scroll-l">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-l icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 																<span class="metro-stations__body">
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
@@ -496,8 +385,131 @@
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
 																</span>
-																<button class="metro-stations__scroll-r">
-																	<i class="icon icon-arrow-black"></i>
+																<button class="metro-stations__scroll-r icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
+																</button>
+															</span>
+															</div>
+														</li>
+														<li>
+															<p>Площадь: 848 м²</p>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="b-catalog-item__result">
+												<p>Ставка аренды за м<sup>2</sup>/год</p>
+												<div class="b-catalog-item__price">
+													32 000 &#8381;
+												</div>
+											</div>
+										</div>
+										<div class="b-catalog-item">
+											<div class="b-catalog-item__body">
+												<div href="#" class="b-catalog-item__img">
+													<a href="#">
+														<img src="img/products/catalog-item-1.png" alt="img">
+													</a>
+													<div class="b-catalog-item__lot">Лот: <span>376842</span></div>
+												</div>
+												<div class="b-catalog-item__info">
+													<div>		
+														<a href="#" class="b-catalog-item__name">Аренда офисов в бизнес-парке «Вымпел»</a>
+													</div>
+													<ul class="b-catalog-item__prop">
+														<li>
+															<p>Округ: ЦАО</p>
+														</li>
+														<li>
+															<p>Класс: В</p>
+														</li>
+														<li>
+															<div class="d-flex align-items-center">
+															Метро: 
+															<span class="metro-stations">
+																<button class="metro-stations__scroll-l icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
+																</button>
+																<span class="metro-stations__body">
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																</span>
+																<button class="metro-stations__scroll-r icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
+																</button>
+															</span>
+															</div>
+														</li>
+														<li>
+															<p>Площадь: 848 м²</p>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="b-catalog-item__result">
+												<p>Ставка аренды за м<sup>2</sup>/год</p>
+												<div class="b-catalog-item__price">
+													32 000 &#8381;
+												</div>
+											</div>
+										</div>
+										<div class="b-catalog-item">
+											<div class="b-catalog-item__body">
+												<div href="#" class="b-catalog-item__img">
+													<a href="#">
+														<img src="img/products/catalog-item-1.png" alt="img">
+													</a>
+													<div class="b-catalog-item__lot">Лот: <span>376842</span></div>
+												</div>
+												<div class="b-catalog-item__info">
+													<div>		
+														<a href="#" class="b-catalog-item__name">Аренда офисов в бизнес-парке «Вымпел»</a>
+													</div>
+													<ul class="b-catalog-item__prop">
+														<li>
+															<p>Округ: ЦАО</p>
+														</li>
+														<li>
+															<p>Класс: В</p>
+														</li>
+														<li>
+															<div class="d-flex align-items-center">
+															Метро: 
+															<span class="metro-stations">
+																<button class="metro-stations__scroll-l icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
+																</button>
+																<span class="metro-stations__body">
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																	<span class="metro-stations__color" style="background-color: #7A22AC"></span>Таганская
+																</span>
+																<button class="metro-stations__scroll-r icons-hover">
+																	<i class="icon icon-arrow-black icons-hover--visible"></i>
+																	<i class="icon icon-arrow-red"></i>
 																</button>
 															</span>
 															</div>

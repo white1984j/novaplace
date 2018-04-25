@@ -8,8 +8,8 @@ $(function () {
 
 	$('.b-catalog-item-img-slider').each(function () {
 		if ($(this).next('.b-catalog-item-img-slider__numbers').length) {
-			var _$numbers = $(this).next('.b-catalog-item-img-slider__numbers');
-			_$numbers.find('.b-catalog-item-img-slider__numbers--max').text($(this).children().length);
+			var $numbers = $(this).next('.b-catalog-item-img-slider__numbers');
+			$numbers.find('.b-catalog-item-img-slider__numbers--max').text($(this).children().length);
 		}
 		$(this).slick({
 			prevArrow: '<button class="slider-arrow slider-arrow--prev"><i class="icon icon-arrow-white"></i></button>',
@@ -31,10 +31,10 @@ $(function () {
 		    scrollLeft = 0;
 
 		$wrap.find('.metro-stations__scroll-l').on('click', function () {
-			$body.animate({ scrollLeft: scrollLeft - 100 }, 300);
+			$body.animate({ scrollLeft: scrollLeft - 100 }, 200);
 		});
 		$wrap.find('.metro-stations__scroll-r').on('click', function () {
-			$body.animate({ scrollLeft: scrollLeft + 100 }, 300);
+			$body.animate({ scrollLeft: scrollLeft + 100 }, 200);
 		});
 
 		function checkScroll() {
@@ -91,6 +91,7 @@ $(function () {
 
 	// select styler
 	$('.js-select-styler').select2({
+		placeholder: "Выбрать",
 		closeOnSelect: false
 	});
 	$('.b-filter').on('scroll', function () {

@@ -8,7 +8,7 @@ $(function() {
 
 	$('.b-catalog-item-img-slider').each(function(){
 		if( $(this).next('.b-catalog-item-img-slider__numbers').length ){
-			let $numbers = $(this).next('.b-catalog-item-img-slider__numbers');
+			var $numbers = $(this).next('.b-catalog-item-img-slider__numbers');
 			$numbers.find('.b-catalog-item-img-slider__numbers--max').text( $(this).children().length );
 		}
 		$(this)
@@ -27,18 +27,18 @@ $(function() {
 
 
 	$('.metro-stations').each( function() {
-		let $wrap = $(this),
+		var $wrap = $(this),
 				//wrapWidth = Math.ceil( $wrap.width() ),
 				$body =  $wrap.find('.metro-stations__body'),
 				bodyWidth = Math.ceil( $body.width() ),
 				maxScroll = $body[0].scrollWidth,
 				scrollLeft = 0;
 
-		$wrap.find('.metro-stations__scroll-l').on('click', () => {
-			$body.animate({ scrollLeft: scrollLeft - 100 }, 300)
+		$wrap.find('.metro-stations__scroll-l').on('click', function() {
+			$body.animate({ scrollLeft: scrollLeft - 100 }, 200)
 		});
-		$wrap.find('.metro-stations__scroll-r').on('click', () => {
-			$body.animate({ scrollLeft: scrollLeft + 100 }, 300)
+		$wrap.find('.metro-stations__scroll-r').on('click', function() {
+			$body.animate({ scrollLeft: scrollLeft + 100 }, 200)
 		});
 
 		function checkScroll(){
@@ -102,6 +102,7 @@ $(function() {
 
 	// select styler
 	$('.js-select-styler').select2({
+		placeholder: "Выбрать",
 		closeOnSelect: false
 	});
 	$('.b-filter').on('scroll', function() {
