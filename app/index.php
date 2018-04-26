@@ -12,6 +12,9 @@
 		<li>
 			<a href="catalog.php">Каталог</a>
 		</li>
+		<li>
+			<a href="detailed.php">Детальная</a>
+		</li>
 	</ol>
 </body>
 </html>
