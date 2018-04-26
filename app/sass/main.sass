@@ -166,6 +166,14 @@ p
 .pos-r
 	position: relative
 
+.link-back
+	display: inline-flex
+	align-items: center
+	text-decoration: none
+	.icon
+		margin-right: 8px
+		transform: rotate(180deg)
+
 .btn
 	display: inline-flex
 	padding: 8px 24px
@@ -1247,7 +1255,7 @@ ul.select2-results__options
 
 
 
-// preview news
+// news
 .b-preview-news
 	margin-bottom: 25px
 	padding: 35px
@@ -1266,9 +1274,20 @@ ul.select2-results__options
 		text-decoration: none
 .b-preview-news__txt
 	margin-bottom: 18px
+.b-news-detailed__date,
 .b-preview-news__date
 	font-size: 13px
 	color: $gray9
+
+.b-news-detailed__date
+	padding-bottom: 20px
+	margin-bottom: 25px
+	border-bottom: 1px solid $gray11
+
+.b-news-detailed__path
+	margin-bottom: 25px
+	img
+		max-width: 100%
 
 
 

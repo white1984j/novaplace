@@ -18,6 +18,9 @@
 		<li>
 			<a href="news.php">Новости - список</a>
 		</li>
+		<li>
+			<a href="news-detailed.php">Новости - детально</a>
+		</li>
 	</ol>
 </body>
 </html>

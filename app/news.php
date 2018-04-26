@@ -16,7 +16,7 @@
 										<div class="row">
 											<div class="col-md-3">
 												<a href="#" class="b-preview-news__img">
-													<img src="img/detailed/detailed.png" alt="img">
+													<img src="img/news/news-detailed.png" alt="img">
 												</a>
 											</div>
 											<div class="col-md-9">
@@ -37,7 +37,7 @@
 										<div class="row">
 											<div class="col-md-3">
 												<a href="#" class="b-preview-news__img">
-													<img src="img/detailed/detailed.png" alt="img">
+													<img src="img/news/news-detailed.png" alt="img">
 												</a>
 											</div>
 											<div class="col-md-9">
@@ -58,7 +58,7 @@
 										<div class="row">
 											<div class="col-md-3">
 												<a href="#" class="b-preview-news__img">
-													<img src="img/detailed/detailed.png" alt="img">
+													<img src="img/news/news-detailed.png" alt="img">
 												</a>
 											</div>
 											<div class="col-md-9">
@@ -79,7 +79,7 @@
 										<div class="row">
 											<div class="col-md-3">
 												<a href="#" class="b-preview-news__img">
-													<img src="img/detailed/detailed.png" alt="img">
+													<img src="img/news/news-detailed.png" alt="img">
 												</a>
 											</div>
 											<div class="col-md-9">
@@ -95,6 +95,7 @@
 											</div>
 										</div>
 									</div>
+
 
 									<div class="">
 										<div class="b-pagination b-pagination--right">
