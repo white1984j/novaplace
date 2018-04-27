@@ -28,6 +28,9 @@
 		<li>
 			<a href="reviews.php">Отзывы</a>
 		</li>
+		<li>
+			<a href="contacts.php">Контакты</a>
+		</li>
 	</ol>
 </body>
 </html>

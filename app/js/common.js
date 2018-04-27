@@ -210,4 +210,8 @@ $(function() {
 
 
 
+	//magnific popup
+	$('.js-mg-pp').magnificPopup()
+
+
 });

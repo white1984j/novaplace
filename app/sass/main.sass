@@ -186,7 +186,9 @@ p
 	align-items: center
 	justify-content: center
 	white-space: nowrap
-	cursor: pointer	
+	cursor: pointer
+	&:focus
+		outline: none
 .btn--red
 	background: $red
 	border-color: $red
@@ -929,10 +931,19 @@ p
 //form
 .b-label
 	display: block
-	margin-bottom: 30px	
+	margin-bottom: 25px	
+.b-label--checkbox
+	display: flex
+	align-items: flex-start
+	input[type="checkbox"]
+		display: none
+		&:checked + .b-checkbox
+			.icon
+				opacity: 1
 .b-label__txt
 	display: block	
-	margin-bottom: 5px	
+	padding-left: 17px
+	margin-bottom: 5px
 .b-input
 	display: block
 	width: 100%
@@ -940,9 +951,26 @@ p
 	border: 1px solid $gray13
 	border-radius: 30px
 	background: none
+textarea.b-input
+	min-height: 150px
+	resize: none
 .b-input__m-b
 	margin-bottom: 10px
 
+.b-checkbox
+	display: inline-flex
+	position: relative
+	top: 3px
+	min-width: 17px
+	min-height: 17px
+	margin-right: 9px
+	justify-content: center
+	align-items: center
+	border-radius: 4px
+	background: $gray14
+	cursor: pointer
+	.icon
+		opacity: 0
 
 //filter
 .b-filter
@@ -1345,5 +1373,30 @@ ul.select2-results__options
 		outline: none
 .b-review-btn__txt-open
 	display: none
+
+
+
+
+// modal
+.b-modal
+	width: 710px
+	max-width: 100%
+	position: relative
+	margin: auto
+	padding: 50px
+	background: $gray17
+.mfp-close
+	top: 10px
+	right: 10px
+	font-size: 42px
+.b-modal__body
+	width: 420px
+	max-width: 100%
+	margin: auto
+.b-modal__title
+	margin-bottom: 10px
+	font: 30px/1.2 $RobotoSlab
+
+
 
 @import "media"

@@ -179,4 +179,7 @@ $(function () {
 
 		$(this).closest('.b-review').toggleClass('b-review--close');
 	});
+
+	//magnific popup
+	$('.js-mg-pp').magnificPopup();
 });

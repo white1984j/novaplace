@@ -71,7 +71,7 @@
 							</div>
 							<div class="col-auto d-inline-flex align-items-center">
 								<a href="tel:89032928968" class="link-tel b-header-link d-none d-md-inline-flex">8-903-292-89-68</a>
-								<a href="#" class="btn btn--bg btn--red d-none d-lg-inline-flex">Оставить заявку</a>
+								<a href="#leave-application" class="btn btn--bg btn--red d-none d-lg-inline-flex js-mg-pp">Оставить заявку</a>
 								<button class="b-hamburger js-toggle-mob-menu d-lg-none">
 									<span class="b-hamburger__path"></span>
 									<span class="b-hamburger__path"></span>
