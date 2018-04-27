@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+
 	<title>Document</title>
 </head>
 <body>
@@ -20,6 +24,9 @@
 		</li>
 		<li>
 			<a href="news-detailed.php">Новости - детально</a>
+		</li>
+		<li>
+			<a href="reviews.php">Отзывы</a>
 		</li>
 	</ol>
 </body>

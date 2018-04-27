@@ -170,4 +170,13 @@ $(function () {
 		$('.related-products-slider').slick('unslick');
 		relatedProductsSlider();
 	}).eq(0).addClass("active");
+
+	//reviews
+	$('.b-review').each(function () {
+		if ($(this).find('.b-review__text').height() > 80) $(this).addClass('b-review--close');
+	});
+	$('.b-review-btn').on("click", function () {
+
+		$(this).closest('.b-review').toggleClass('b-review--close');
+	});
 });
