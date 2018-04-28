@@ -17,6 +17,9 @@
 			<a href="catalog.php">Каталог</a>
 		</li>
 		<li>
+			<a href="catalog-category.php">Каталог - категории</a>
+		</li>
+		<li>
 			<a href="detailed.php">Детальная</a>
 		</li>
 		<li>
@@ -30,6 +33,9 @@
 		</li>
 		<li>
 			<a href="contacts.php">Контакты</a>
+		</li>
+		<li>
+			<a href="taxation.php">Налоговая</a>
 		</li>
 	</ol>
 </body>

@@ -35,7 +35,7 @@
 	</a>
 </footer>
 
-<div class="hidden">
+<div class="d-none">
 	<div class="b-modal" id="leave-application">
 		<div class="b-modal__title txt-c">Оставить заявку</div>
 		<div class="b-modal__body">
