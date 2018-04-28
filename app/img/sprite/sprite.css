@@ -30,7 +30,7 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-arrow-white {
   background-image: url(sprite.png);
-  background-position: -108px -35px;
+  background-position: -112px -42px;
   width: 9px;
   height: 6px;
 }
@@ -48,9 +48,15 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 }
 .icon-checked--red {
   background-image: url(sprite.png);
-  background-position: -99px -35px;
+  background-position: -112px -35px;
   width: 9px;
   height: 7px;
+}
+.icon-doc {
+  background-image: url(sprite.png);
+  background-position: -99px -35px;
+  width: 13px;
+  height: 16px;
 }
 .icon-filter-white {
   background-image: url(sprite.png);
