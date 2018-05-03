@@ -50,7 +50,10 @@
 							</div>
 							<div class="col-auto d-inline-flex aligm-items-center">
 								<div class="d-inline-flex d-md-none">
-									<i class="icon icon-loupe-blue--bg"></i>
+									<button class="toggle-mob-search">
+										<i class="icon icon-loupe-blue--bg"></i>
+										<i class="icon">×</i>
+									</button>
 								</div>
 								<div class="d-none d-md-inline-flex">
 									<ul class="b-nav">
@@ -79,6 +82,15 @@
 								</button>
 							</div>
 							<? include('b-mob-menu.php'); ?>
+						</div>
+						<div class="d-md-none">
+							<form class="b-search">
+								<input type="text" class="b-search__input" placeholder="Поиск по сайту">
+								<button type="submit" class="b-search__submit icons-hover">
+									<i class="icon icon-loupe-blue icons-hover--visible"></i>
+									<i class="icon icon-loupe-red"></i>
+								</button>
+							</form>
 						</div>
 						<div class="txt-c d-md-none">
 							<a href="tel:89032928968" class="link-tel b-header-link">8-903-292-89-68</a>

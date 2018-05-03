@@ -87,7 +87,7 @@
 			</div>
 		</div>
 		<div class="col-md-4 d-none d-md-inline-flex">
-			<a href="#" class="b-select-location" style="background-image: url('img/location.png')">
+			<a href="#modal-filter" class="b-select-location js-mg-pp" style="background-image: url('img/location.png')">
 				<i class="icon icon-location"></i>
 				<p>Выбрать расположение</p>
 			</a>

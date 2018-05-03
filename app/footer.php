@@ -69,4 +69,135 @@
 			</form>
 		</div>
 	</div>
+
+	<div class="modal-filter b-tab-wrapper" id="modal-filter">
+		<div class="modal-filter__head">
+			<div class="b-modal__title">Расположение</div>
+			<div class="b-tabs">
+				<span class="b-tabs__item active">Метро</span>
+				<span class="b-tabs__item">Округ</span>
+				<span class="b-tabs__item">Район</span>  
+				<span class="b-tabs__item">Улица</span>
+				<span class="b-tabs__item">Карта</span>
+			</div>
+		</div>
+		<div class="modal-filter__body">
+			<div class="b-tab-content">
+				<div class="b-tab-content__item">
+					<i class="circle-preloader"></i>
+					<? include('metro.php'); ?>
+				</div>
+				<div class="b-tab-content__item">
+					<i class="circle-preloader"></i>
+					<ul class="b-filter-district-list">
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">ВАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">ЗАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">Новомосковский</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">САО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">СВАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">СЗАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">ЦАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">ЮАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">ЮВАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+						<li>
+							<div class="b-filter-district-path">
+								<label class="b-filter-label-checkbox">
+									<input type="checkbox">
+									<span class="b-filter-label-checkbox__txt">ЮЗАО</span>
+								</label>
+								<span class="b-filter-district-path__count">153 объекта</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="b-tab-content__item">
+					<i class="circle-preloader"></i>
+					<? include('filter-area.php'); ?>
+				</div>
+				<div class="b-tab-content__item">
+					<i class="circle-preloader"></i>
+					<select class="js-select-styler" multiple="" data-selected="[]" name="street[]" tabindex="-1" aria-hidden="true"></select>
+				</div>
+				<div class="b-tab-content__item">
+					<i class="circle-preloader"></i>
+					<? include('filter-map.php'); ?>
+				</div>
+			</div>
+		</div>
+		<div class="modal-filter__footer">
+			footer
+		</div>
+	</div>
 </div>
