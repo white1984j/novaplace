@@ -105,6 +105,43 @@
 		padding: 25px 25px 25px
 	.b-catalog-category
 		margin-bottom: 45px
+	.modal-filter__head
+		flex-direction: column
+		align-items: flex-start
+	.modal-filter
+		height: auto
+		max-height: none
+	.modal-filter__head,
+	.modal-filter__body,
+	.modal-filter__footer
+		padding: 15px
+	.modal-filter__body
+		height: auto
+		max-height: none
+	.b-filter-district-list 
+		li
+			flex: 0 0 calc(100% / 2)
+			max-width: calc(100% / 2)
+	.current-city-map
+		display: (none !important)
+	.current-lines
+		position: (static !important)
+		width: (auto !important)
+		height: (auto !important)
+		padding: 25px 15px
+		ul
+			padding: 0
+		li
+			position: (static !important)
+			label
+				text-align: (left !important)
+				padding-left: (0 !important)
+				i
+					position: (static !important)
+	.metro-map[data-mode=map] header
+		display: block
+	.metro-map[data-mode=map] .current-map .current-lines li.metro-item[data-position=none]>*
+		font-size-adjust: 
 		
 // ≥768px
 +media-breakpoint-down(sm)
@@ -227,6 +264,13 @@
 	.b-search
 		margin-bottom: 15px
 		display: none
+	.modal-filter__footer
+		flex-direction: column
+		align-items: center
+		& > *
+			margin: 10px 0
+			&:nth-child(3)
+				justify-content: center
 
 @media only screen and (max-width : 1100px) and (min-width : 991px)
 	.btn--filter

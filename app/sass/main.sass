@@ -416,6 +416,9 @@ p
 	font-weight: bold
 	border: none
 	border-bottom: 1px solid $gray1
+	transition: 0.3s
+	&:focus
+		border-bottom-color: $blue
 .b-search__submit 
 	position: absolute
 	display: inline-flex
@@ -1007,7 +1010,7 @@ textarea.b-input
 	top: 0
 	border-top: 6px solid $blue6
 	box-shadow: 0 22px 24px 0 rgba(0,0,0,0.35)
-	z-index: 2
+	z-index: 3
 	&:after
 		content: ""
 		display: inline-block
@@ -1433,8 +1436,8 @@ ul.select2-results__options
 	padding: 50px
 	background: $gray17
 .mfp-close
-	top: (10px !important)
-	right: 10px
+	top: (5px !important)
+	right: 5px
 	font-size: 42px
 	transition: 0.3s
 	&:focus
@@ -1509,10 +1512,18 @@ ul.select2-results__options
 .modal-filter__body
 	padding: 30px
 	border-bottom: 1px solid $gray13
+	height: calc(100vh - 20px - 107px - 184px)
 	max-height: calc(100vh - 20px - 107px - 184px)
 	overflow: auto
 .modal-filter__footer
 	padding: 30px
+	& > *
+		display: inline-flex
+		align-items: center
+		&:nth-child(2)
+			justify-content: center
+		&:nth-child(3)
+			justify-content: flex-end
 
 
 
@@ -1582,59 +1593,8 @@ ul.select2-results__options
           background: transparent url('../img/selected-metro.png') no-repeat -9999px -9999px
   input:checked + i, .metro-item a:hover i
     background-position: 50% 50% !important
-
-@media screen and (min-width: 900px)
-  .metro-map[data-mode="map"]
-    padding: 0 !important
-    .current-map
-      width: auto
-      .current-city-map
-        display: block
-      .current-lines
-        width: 0
-        height: 0
-        overflow: visible
-      li.line-item
-        display: inline-block
-    header
-      display: none
-    .current-map .current-lines li.metro-item
-      margin: 0
-      min-height: 17px
-      line-height: 17px
-      font-size: 12px !important
-      position: absolute
-      overflow: visible
-      z-index: 3
-      > *
-        position: relative
-        display: block
-        padding: 0 0 0 18px
-      i
-        margin: 0
-        position: absolute
-      span.metro-name
-        background-color: rgba(255, 255, 255, 0.5)
-        -moz-border-radius: 2px
-        -webkit-border-radius: 2px
-        border-radius: 2px
-      &[data-position="right"]
-        > *
-          text-align: right
-          padding: 0 18px 0 0
-        i
-          left: auto
-          right: 0
-      &[data-position="none"] > *
-        font-size: 0 !important
-        width: 0 !important
-        color: transparent !important
-        background-color: transparent !important
-      &[data-wrap="1"]
-        width: 0
-        line-height: 10px
-        > *
-          position: absolute
+#metro-map
+	max-width: 100%
 
 
 
@@ -1654,6 +1614,8 @@ ul.select2-results__options
 .b-filter-district-path
 	display: flex
 	align-items: center
+.b-filter-district-path__count
+	margin-bottom: 10px
 .b-filter-label-checkbox
 	display: inline-block
 	cursor: pointer
@@ -1709,6 +1671,21 @@ ul.select2-results__options
 	font-weight: bold
 	color: $blue-btn
 	font-size: 24px
+
+
+
+
+#draw
+	display: inline-block
+	position: absolute
+	left: 9px
+	top: 50px
+	padding: 3px 10px
+	background: #FFDB4D
+	color: $black
+	border: none
+	z-index: 2
+
 
 
 @import "media"
