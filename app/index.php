@@ -37,6 +37,9 @@
 		<li>
 			<a href="taxation.php">Налоговая</a>
 		</li>
+		<li>
+			<a href="404.php">404</a>
+		</li>
 	</ol>
 </body>
 </html>

@@ -89,14 +89,14 @@
 						<? include('metro.php'); ?>
 					</div>
 					<div class="modal-filter__footer row">
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<b>Выбрано:</b>
 							<input type="text" class=" b-input" style="margin-left: 15px; width: 100px;" readonly>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<button class="btn btn--red">Применить</button>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<input type="reset" class="btn btn--hov-blue" value="Очистить метро">
 						</div>
 					</div>
@@ -198,14 +198,14 @@
 						</ul>
 					</div>
 					<div class="modal-filter__footer row">
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<b>Выбрано:</b>
 							<input type="text" class=" b-input" style="margin-left: 15px; width: 100px;" readonly>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<button class="btn btn--blue">Применить</button>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<input type="reset" class="btn btn--hov-blue" value="Очистить округ">
 						</div>
 					</div>
@@ -216,14 +216,14 @@
 						<? include('filter-area.php'); ?>
 					</div>
 					<div class="modal-filter__footer row">
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<b>Выбрано:</b>
 							<input type="text" class=" b-input" style="margin-left: 15px; width: 100px;" readonly>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<button class="btn btn--red">Применить</button>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<input type="reset" class="btn btn--hov-blue" value="Очистить районы">
 						</div>
 					</div>
@@ -234,14 +234,14 @@
 						<select class="js-select-styler" multiple="" data-selected="[]" name="street[]" tabindex="-1" aria-hidden="true"></select>
 					</div>
 					<div class="modal-filter__footer row">
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<b>Выбрано:</b>
 							<input type="text" class=" b-input" style="margin-left: 15px; width: 100px;" readonly>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<button class="btn btn--red">Применить</button>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<input type="reset" class="btn btn--hov-blue" value="Очистить улицы">
 						</div>
 					</div>
@@ -252,14 +252,14 @@
 						<? include('filter-map.php'); ?>
 					</div>
 					<div class="modal-filter__footer row">
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<b>Выбрано:</b>
 							<input type="text" class=" b-input" style="margin-left: 15px; width: 100px;" readonly>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<button class="btn btn--red">Применить</button>
 						</div>
-						<div class="col-4">
+						<div class="col-12 col-sm-4">
 							<input type="reset" class="btn btn--hov-blue" value="Очистить карту">
 						</div>
 					</div>
