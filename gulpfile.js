@@ -53,6 +53,9 @@ gulp.task('js', ['commonjs'], function() {
 		'app/libs/select2/dist/js/select2.min.js',
 		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
 		'app/libs/simplify-js/simplify-js.js',
+		'app/libs/lightgallery/dist/js/lightgallery-all.min.js',
+		'app/libs/lg-fullscreen/dist/lg-fullscreen.min.js',
+		'app/libs/lg-thumbnail/dist/lg-thumbnail.min.js',
 		'app/js/babel/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

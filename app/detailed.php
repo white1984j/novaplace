@@ -11,14 +11,30 @@
 
 									<h2>Бизнес-центр "Вымпел"</h2>
 
+
 									<div class="row">
 										<div class="col-md-8">
-											<div class="b-detailed-slider">
-												<img src="img/detailed/detailed.png" alt="img">
-												<img src="img/detailed/detailed.png" alt="img">
-												<img src="img/detailed/detailed.png" alt="img">
-												<img src="img/detailed/detailed.png" alt="img">
-												<img src="img/detailed/detailed.png" alt="img">
+											<div class="b-detailed-slider" id="lightgallery">
+												<div>
+													<a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
+												  </a>
+												</div>
+												<div>
+												  <a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
+												  </a>
+												</div>
+												<div>
+												  <a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
+												  </a>
+											 	</div>
+											 	<div>
+												  <a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
+												  </a>
+											  </div>
 											</div>
 										</div>
 										<div class="col-md-4">
