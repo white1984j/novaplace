@@ -185,12 +185,17 @@ $(function () {
 	});
 
 	// filter
+	$(document).on("click", function () {
+		if ($('.b-filter:not(:animated):visible').length) {
+			$('.b-filter').slideUp();
+			$('.btn--filter').removeClass('active');
+		}
+	});
 	$('.btn--filter').on("click", function (e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
 		$('.b-filter').slideToggle();
 	});
-
 	$('.b-filter__back').on("click", function () {
 		$('.b-filter').slideUp();
 	});

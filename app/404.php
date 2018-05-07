@@ -1,5 +1,19 @@
 <? include('header.php'); ?>
 
+			<div class="container no-gutters">
+				<div class="row no-gutters">
+					<div class="col content-sm d-none d-lg-flex">
+					</div>
+					<div class="col content-bg b-content p-0">
+						<div class="pos-r">	
+							<div class="b-filter">
+								<? include('filter.php') ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 <div class="not-found-wrap">
 	<div class="container not-found-container">
 		<div class="not-found-subtitle">ОШИБКА 404</div>
@@ -20,3 +34,9 @@
 </div>
 
 <? include('footer.php'); ?>
+
+	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/scripts.min.js"></script>
+</div>
+</body>
+</html>

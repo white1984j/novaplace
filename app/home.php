@@ -58,7 +58,7 @@
 									<div class="b-products b-products--grid b-products--grid-slider">
 										<div class="b-catalog-item">
 											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
+												<div class="b-catalog-item__img">
 													<a href="#">
 														<img src="img/products/catalog-item-1.png" alt="img">
 													</a>
@@ -119,7 +119,7 @@
 										</div>
 										<div class="b-catalog-item">
 											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
+												<div class="b-catalog-item__img">
 													<a href="#">
 														<img src="img/products/catalog-item-1.png" alt="img">
 													</a>
@@ -180,7 +180,7 @@
 										</div>
 										<div class="b-catalog-item">
 											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
+												<div class="b-catalog-item__img">
 													<a href="#">
 														<img src="img/products/catalog-item-1.png" alt="img">
 													</a>
@@ -241,7 +241,7 @@
 										</div>
 										<div class="b-catalog-item">
 											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
+												<div class="b-catalog-item__img">
 													<a href="#">
 														<img src="img/products/catalog-item-1.png" alt="img">
 													</a>
@@ -302,7 +302,7 @@
 										</div>
 										<div class="b-catalog-item">
 											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
+												<div class="b-catalog-item__img">
 													<a href="#">
 														<img src="img/products/catalog-item-1.png" alt="img">
 													</a>
@@ -363,7 +363,7 @@
 										</div>
 										<div class="b-catalog-item">
 											<div class="b-catalog-item__body">
-												<div href="#" class="b-catalog-item__img">
+												<div class="b-catalog-item__img">
 													<a href="#">
 														<img src="img/products/catalog-item-1.png" alt="img">
 													</a>

@@ -86,8 +86,12 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4 d-none d-md-inline-flex">
-			<a href="#modal-filter" class="b-select-location js-mg-pp" style="background-image: url('img/location.png')">
+		<div class="col-md-4 col-12 d-md-inline-flex">
+			<a href="#modal-filter" class="b-select-location js-mg-pp d-none d-lg-inline-flex" style="background-image: url('img/location.png')">
+				<i class="icon icon-location"></i>
+				<p>Выбрать расположение</p>
+			</a>
+			<a href="mob-filter.php" class="b-select-location d-inline-flex d-lg-none" style="background-image: url('img/location.png')">
 				<i class="icon icon-location"></i>
 				<p>Выбрать расположение</p>
 			</a>
