@@ -18,7 +18,7 @@ $(function() {
 				prevArrow: '<button class="slider-arrow slider-arrow--prev"><i class="icon icon-arrow-white"></i></button>',
 				nextArrow: '<button class="slider-arrow slider-arrow--next"><i class="icon icon-arrow-white"></i></button>'
 			})
-			.on('afterChange', (event, slick, currentSlide) => {
+			.on('afterChange', function(event, slick, currentSlide) {
 				if( $numbers ){
 					$numbers
 						.find('.b-catalog-item-img-slider__numbers--max').text( slick.$slides.length ).end()
@@ -217,16 +217,23 @@ $(function() {
 
 
 	// filter
-	$(document).on("click", function() {
-		if( $('.b-filter:not(:animated):visible').length ){
-			$('.b-filter').slideUp();
-			$('.btn--filter').removeClass('active');
-		}
-	});
+	// $(document).on("click", function(e) {
+	// 	if( (!$(e.target).closest('.b-filter').length || !$(e.target).closest('.select2-dropdown').length) && $('.b-filter:not(:animated):visible').length ){
+	// 		$('.b-filter').slideUp();
+	// 		$('.btn--filter').removeClass('active');
+	// 	}
+	// });
 	$('.btn--filter').on("click", function(e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$('.b-filter').slideToggle();
+		$('.b-filter').slideToggle('normal', function() {
+			if( $(window).width() < 577 ){
+				console.log( $(this).hasClass('b-filter--static') )
+				if( !$(this).hasClass('b-filter--static') )
+					$(this).css({height: window.innerHeight})
+			}
+		});
+
 	});
 	$('.b-filter__back').on("click", function() {
 		$('.b-filter').slideUp()
@@ -325,6 +332,13 @@ $(document).ready(function(){
 	  var polygon = null;
 
 	  var drawButton = document.querySelector('#draw');
+	  var resetButton = document.querySelector('.js-reset-map');
+
+	  resetButton.addEventListener( "click" , function() {
+	  	if (polygon) {
+        map.geoObjects.remove(polygon);
+      }
+	  });
 
 	  drawButton.onclick = function() {
 	    drawButton.disabled = true;
@@ -362,6 +376,7 @@ $(document).ready(function(){
 	      });
 		  };
 		});
+
 
 		function drawLineOverMap(map) {
 		  var canvas = document.querySelector('#draw-canvas');

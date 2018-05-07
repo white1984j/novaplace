@@ -260,7 +260,7 @@
 							<button class="btn btn--red">Применить</button>
 						</div>
 						<div class="col-12 col-sm-4">
-							<input type="reset" class="btn btn--hov-blue" value="Очистить карту">
+							<input type="reset" class="btn btn--hov-blue js-reset-map" value="Очистить карту">
 						</div>
 					</div>
 				</div>

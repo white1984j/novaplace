@@ -185,16 +185,21 @@ $(function () {
 	});
 
 	// filter
-	$(document).on("click", function () {
-		if ($('.b-filter:not(:animated):visible').length) {
-			$('.b-filter').slideUp();
-			$('.btn--filter').removeClass('active');
-		}
-	});
+	// $(document).on("click", function(e) {
+	// 	if( (!$(e.target).closest('.b-filter').length || !$(e.target).closest('.select2-dropdown').length) && $('.b-filter:not(:animated):visible').length ){
+	// 		$('.b-filter').slideUp();
+	// 		$('.btn--filter').removeClass('active');
+	// 	}
+	// });
 	$('.btn--filter').on("click", function (e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
-		$('.b-filter').slideToggle();
+		$('.b-filter').slideToggle('normal', function () {
+			if ($(window).width() < 577) {
+				console.log($(this).hasClass('b-filter--static'));
+				if (!$(this).hasClass('b-filter--static')) $(this).css({ height: window.innerHeight });
+			}
+		});
 	});
 	$('.b-filter__back').on("click", function () {
 		$('.b-filter').slideUp();

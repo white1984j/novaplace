@@ -38,15 +38,15 @@ gulp.task('styles', function() {
 	.pipe(browsersync.reload( {stream: true} ))
 });
 
-gulp.task('commonjs', () =>
-    gulp.src('app/js/common.js')
-        .pipe(babel({
-            presets: ['env']
-        }))
-        .pipe(gulp.dest('app/js/babel/'))
-);
+// gulp.task('commonjs', () =>
+//     gulp.src('app/js/common.js')
+//         .pipe(babel({
+//             presets: ['env']
+//         }))
+//         .pipe(gulp.dest('app/js/babel/'))
+// );
 
-gulp.task('js', ['commonjs'], function() {
+gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/slick-carousel/slick/slick.min.js',
@@ -56,7 +56,7 @@ gulp.task('js', ['commonjs'], function() {
 		'app/libs/lightgallery/dist/js/lightgallery-all.min.js',
 		'app/libs/lg-fullscreen/dist/lg-fullscreen.min.js',
 		'app/libs/lg-thumbnail/dist/lg-thumbnail.min.js',
-		'app/js/babel/common.js', // Always at the end
+		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Mifify js (opt.)
