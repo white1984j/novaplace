@@ -6,6 +6,11 @@
 						<? include('sidebar.php'); ?>
 					</div>
 					<div class="col content-bg b-content">
+						<div class="pos-r">	
+							<div class="b-filter">
+								<? include('filter.php') ?>
+							</div>
+						</div>
 						<main class="b-detailed">
 							<div class="b-content__path">
 
@@ -21,18 +26,18 @@
 												  </a>
 												</div>
 												<div>
-												  <a href="img/detailed/detailed.png" class="lightgallery-item">
-												      <img src="img/detailed/detailed.png" width="995px" />
+												  <a href="img/services/services-1.png" class="lightgallery-item">
+												      <img src="img/services/services-1.png" width="995px" />
 												  </a>
 												</div>
 												<div>
-												  <a href="img/detailed/detailed.png" class="lightgallery-item">
-												      <img src="img/detailed/detailed.png" width="995px" />
+												  <a href="img/services/services-2.png" class="lightgallery-item">
+												      <img src="img/services/services-2.png" width="995px" />
 												  </a>
 											 	</div>
 											 	<div>
-												  <a href="img/detailed/detailed.png" class="lightgallery-item">
-												      <img src="img/detailed/detailed.png" width="995px" />
+												  <a href="img/services/services-3.png" class="lightgallery-item">
+												      <img src="img/services/services-3.png" width="995px" />
 												  </a>
 											  </div>
 											</div>
@@ -98,10 +103,12 @@
 											</div>
 											<div class="col-md-4">
 												<div class="b-detailed-props">
-													<div>
-														<a href="#" class="btn btn--red">Оставить заявку</a>
+													<div class="d-inline-flex flex-column align-items-center">
+														<div>
+															<a href="#order-object" class="btn btn--red js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Оставить заявку</a>
+														</div>
+														<a href="#detailed-page-reviews" class="js-anchor">Прочитать отзывы</a>
 													</div>
-													<a href="#">Прочитать отзывы</a>
 												</div>
 											</div>
 										</div>
@@ -118,7 +125,7 @@
 								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8982.52379237804!2d37.620331787942334!3d55.74754101880859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afc73d4b0c9%3A0x3d44d6cc5757cf4c!2z0JzQvtGB0LrQstCwLCDQoNC-0YHRgdC40Y8!5e0!3m2!1sru!2sfr!4v1524736283593" width="100%" height="450px" frameborder="0" style="border:0;" allowfullscreen></iframe>
 							</div>
 
-							<div class="b-content__path">
+							<div class="b-content__path" id="detailed-page-reviews">
 								<div class="gray-block d-flex flex-column justify-content-between min-h-100 ">
 									<h4 class="gray-block__title">Отзывы</h4>
 									<div class="b-preview-review-wrap b-preview-review-wrap--bg">
@@ -139,7 +146,10 @@
 
 									</div>
 									<div class="txt-c">
-										<a href="#" class="btn  btn--blue">Показать еще (245)</a>
+										<a href="#" class="btn btn--blue mar-b-10">Показать еще (245)</a>
+									</div>
+									<div class="txt-c">
+										<a href="#add-review" class="btn btn--red add-review js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Оставить отзыв</a>
 									</div>
 								</div>
 							</div>

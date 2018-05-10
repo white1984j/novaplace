@@ -91,8 +91,15 @@ p
 .bg-white
 	background: $white
 
+.mar-b-10
+	margin-bottom: 10px
 .mar-b-30
 	margin-bottom: 30px
+
+.w-420
+	width: 420px
+	max-width: 100%
+	margin: auto
 
 .min-h-100
 	min-height: 100%
@@ -972,6 +979,18 @@ p
 .b-label
 	display: block
 	margin-bottom: 25px	
+.b-label--error
+	.b-input
+		border-color: $red
+		background: $red-l
+	.error-text
+		display: block
+.error-text
+	display: none
+	margin: 5px 0
+	padding-left: 17px
+	font-size: 11px
+	color: $red
 .b-label--checkbox
 	display: flex
 	align-items: flex-start
@@ -1473,7 +1492,7 @@ ul.select2-results__options
 .b-catalog-category
 	display: flex
 	flex-direction: column
-	margin-bottom: 60px
+	margin: 20px 0 40px
 	text-align: center
 	transition: 0.3s
 	&:hover
@@ -1514,6 +1533,7 @@ ul.select2-results__options
 	width: 1200px
 	max-width: 100%
 	max-height: calc(100vh - 60px)
+	min-height: calc(100vh - 60px)
 	margin: auto
 	padding-top: 20px
 	background: $gray17
@@ -1792,5 +1812,44 @@ ul.select2-results__options
 	margin-right: 8px
 	min-width: 13px
 
+
+
+//lightgallery
+.lg-backdrop.in
+	opacity: 0.8
+
+
+
+
+
+//arrow back top
+.b-back-top
+	display: flex
+	cursor: pointer
+	position: fixed
+	padding: 12px
+	bottom: 12px
+	right: 12px
+	width: 50px
+	height: 50px
+	justify-content: center
+	align-items: center
+	border-radius: 50%
+	background: $blue-btn
+	border: none
+	transform: rotate(90deg) translateY(calc(-100% - 40px))
+	transition: all 100ms ease-in-out
+	img
+		transition: all 300ms ease-in-out
+	&:hover
+		background: $red
+		img
+			transform: scale(1.2)
+	&:focus
+		outline: none
+.b-back-top--visible
+		transform: rotate(90deg) translateY(0%)
+	
+	
 
 @import "media"

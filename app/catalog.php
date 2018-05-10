@@ -144,7 +144,7 @@
 												<div class="b-catalog-item__price">
 													32 000 &#8381;
 												</div>
-												<a href="#" class="b-catalog-item__order btn btn--blue">Заказать</a>
+												<a href="#order-object" class="b-catalog-item__order btn btn--blue js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Заказать</a>
 											</div>
 										</div>
 										<div class="b-catalog-item">
@@ -223,7 +223,7 @@
 												<div class="b-catalog-item__price">
 													32 000 &#8381;
 												</div>
-												<a href="#" class="b-catalog-item__order btn btn--blue">Заказать</a>
+												<a href="#order-object" class="b-catalog-item__order btn btn--blue js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Заказать</a>
 											</div>
 										</div>
 										<div class="b-catalog-item">
@@ -302,7 +302,7 @@
 												<div class="b-catalog-item__price">
 													32 000 &#8381;
 												</div>
-												<a href="#" class="b-catalog-item__order btn btn--blue">Заказать</a>
+												<a href="#order-object" class="b-catalog-item__order btn btn--blue js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Заказать</a>
 											</div>
 										</div>
 										<div class="b-catalog-item">
@@ -702,7 +702,7 @@
 										</div>
 									</div>
 
-									<div class="d-xl-none">
+									<div class="">
 										<div class="b-pagination">
 											<span class="b-pagination__title">Страницы:</span>
 											<ul class="b-pagination__list">
@@ -734,6 +734,10 @@
 										</div>
 									</div>
 
+							</div>
+							<div class="b-content__path">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nemo, neque commodi ipsa sapiente at laboriosam saepe nostrum tempora velit minima excepturi ea architecto animi quasi praesentium laudantium distinctio quod.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nemo, neque commodi ipsa sapiente at laboriosam saepe nostrum tempora velit minima excepturi ea architecto animi quasi praesentium laudantium distinctio quod.</p>
 							</div>
 
 						</main>

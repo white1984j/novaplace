@@ -116,6 +116,11 @@
 
 							</div>
 
+							<div class="b-content__path">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nemo, neque commodi ipsa sapiente at laboriosam saepe nostrum tempora velit minima excepturi ea architecto animi quasi praesentium laudantium distinctio quod.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nemo, neque commodi ipsa sapiente at laboriosam saepe nostrum tempora velit minima excepturi ea architecto animi quasi praesentium laudantium distinctio quod.</p>
+							</div>
+
 						</main>
 						
 						<? include('footer.php'); ?>

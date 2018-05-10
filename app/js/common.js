@@ -277,7 +277,23 @@ $(function() {
 
 
 	//magnific popup
-	$('.js-mg-pp').magnificPopup()
+	(function(){
+		var val;
+		$('.js-mg-pp').magnificPopup({
+			callbacks: {
+		    elementParse: function(item) {
+		      if( $(item.el).attr('data-modal-product-name') )
+		      	val =  $(item.el).attr('data-modal-product-name');
+		      else
+		      	val = "";
+		    },
+		    open: function(item) {
+		    	$(this.content).find('input[name="product-name"]').val(val);
+				},
+		  }
+		})
+	}());
+		
 
 
 
@@ -305,9 +321,60 @@ $(function() {
 	}); 
 
 
+	$('.js-anchor').on("click", function(e) {
+		var href = $(this).attr('href'),
+			position = $(href).offset().top;
+		$('html, body').animate({ scrollTop: position }, 700);
+		e.preventDefault();
+	});
+
+
+	//remove label error
+	$('.b-input').on('focus', function() {
+		if( $(this).closest('.b-label--error').length )
+			$(this).closest('.b-label--error').removeClass('b-label--error')
+	});
+
+
+
+	//scroll back top
+	$('.b-back-top').on("click", function() {
+		$('html, body').animate({ scrollTop: 0 }, 700);
+	});
+	$(window).scroll(function() {
+		if( $(window).scrollTop() > 1000 )
+			$('.b-back-top').addClass('b-back-top--visible');
+		else
+			$('.b-back-top').removeClass('b-back-top--visible');
+	});
+
 });
 
 
+$(document).ready(function(){ 
+	if( !$('#map-contacts').length ) return;
+
+	ymaps.ready(init);
+
+	function init () {
+
+		var myMap = new ymaps.Map("map-contacts", {
+            center: [55.764646, 37.633165],
+            zoom: 18
+        }),
+        myPlacemark = new ymaps.Placemark([55.764646, 37.633165], {
+            // Чтобы балун и хинт открывались на метке, необходимо задать ей определенные свойства.
+            balloonContentBody: "<div style='font-size: 15px; margin: 10px'><p style='margin-bottom: 10px'>1010000, г. Москва,<br> Милютинский переулок</p> пн.-пт. с 10:00 до 18:00 <br> 8 (495) 771-20-37<br>info@viparenda.ru</div>",
+        });
+
+    myMap.geoObjects.add(myPlacemark);
+
+    myPlacemark.balloon.open();
+    
+
+	}
+
+});
 
 
 
@@ -436,5 +503,7 @@ $(document).ready(function(){
 		  });
 		}
 	}
+
+
 
 });

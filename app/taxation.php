@@ -123,6 +123,10 @@
 									</div>
 
 							</div>
+							<div class="b-content__path">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis minus alias. Accusantium, voluptatem, id consequuntur pariatur saepe rem esse quaerat dolore obcaecati vero similique ea. Id ad consectetur rem!</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores blanditiis minus alias. Accusantium, voluptatem, id consequuntur pariatur saepe rem esse quaerat dolore obcaecati vero similique ea. Id ad consectetur rem!</p>
+							</div>
 
 						</main>
 						
