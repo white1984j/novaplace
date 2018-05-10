@@ -107,6 +107,10 @@ p
 .slick-slider
 	img
 		max-width: 100%
+.slick-not-transform
+	.slick-track
+		transform: (none !important)
+		margin: (auto !important)
 .slick-slide:focus
 	outline: none
 .slick-dots
@@ -271,6 +275,9 @@ p
 .slider-arrow--next
 	right: -5px
 	transform: translateY(-50%) rotate(90deg)
+.slick-disabled
+	pointer-events: none
+	opacity: 0
 
 .icons-hover
 	.icon
@@ -890,6 +897,11 @@ p
 .b-preview-review__date
 	font-size: 13px
 	color: $gray9
+.b-preview-review-btns
+	& > div:first-child
+		text-align: right
+	& > div:last-child
+		text-align: left
 
 
 //b-banners
@@ -1285,6 +1297,21 @@ ul.select2-results__options
 		right: 15px
 	.slider-arrow--prev
 		left: 15px
+.b-detailed-slider--sm
+	overflow: hidden
+	.slick-slide
+		margin: 15px 10px
+		cursor: pointer
+		border: 5px solid $blue-btn
+	.slick-current
+		border-color: $red
+	.slick-track
+		margin: 0
+	.slick-list
+		margin-left: -9px
+		margin-right: -9px
+		padding: (0 !important)
+
 .b-detailed-info
 	display: flex
 	flex-direction: column

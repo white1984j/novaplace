@@ -26,19 +26,33 @@
 												  </a>
 												</div>
 												<div>
-												  <a href="img/services/services-1.png" class="lightgallery-item">
-												      <img src="img/services/services-1.png" width="995px" />
+												 	<a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
 												  </a>
 												</div>
 												<div>
-												  <a href="img/services/services-2.png" class="lightgallery-item">
-												      <img src="img/services/services-2.png" width="995px" />
+												  <a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
 												  </a>
 											 	</div>
 											 	<div>
-												  <a href="img/services/services-3.png" class="lightgallery-item">
-												      <img src="img/services/services-3.png" width="995px" />
+												  <a href="img/detailed/detailed.png" class="lightgallery-item">
+												      <img src="img/detailed/detailed.png" width="995px" />
 												  </a>
+											  </div>
+											</div>
+											<div class="b-detailed-slider--sm">
+												<div>
+												      <img src="img/detailed/detailed.png" width="995px" />
+												</div>
+												<div>
+												      <img src="img/detailed/detailed.png" width="995px" />
+												</div>
+												<div>
+												      <img src="img/detailed/detailed.png" width="995px" />
+											 	</div>
+											 	<div>
+												      <img src="img/detailed/detailed.png" width="995px" />
 											  </div>
 											</div>
 										</div>
@@ -145,11 +159,13 @@
 											</div>
 
 									</div>
-									<div class="txt-c">
-										<a href="#" class="btn btn--blue mar-b-10">Показать еще (245)</a>
-									</div>
-									<div class="txt-c">
-										<a href="#add-review" class="btn btn--red add-review js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Оставить отзыв</a>
+									<div class="row b-preview-review-btns">
+										<div class="col-sm-6 col-12 txt-r">
+											<a href="#add-review" class="btn btn--red add-review js-mg-pp" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Оставить отзыв</a>
+										</div>
+										<div class="col-sm-6 col-12 txt-c">
+											<a href="#" class="btn btn--blue">Показать еще (245)</a>
+										</div>
 									</div>
 								</div>
 							</div>

@@ -10,9 +10,17 @@
 						<main class="">
 							<div class="b-content__path">
 
-									<h2>Отзывы</h2>
-									<div class="mar-b-30">
-										<a href="#form-add-review" class="btn btn--red add-review js-anchor" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Оставить отзыв</a>
+									<div class="d-flex flex-wrap justify-content-between mar-b-30">
+										<div class="col-auto">
+											<h2>Отзывы</h2>
+										</div>
+										<div class="col-auto">
+											<a href="#form-add-review" class="btn btn--red add-review js-anchor" data-modal-product-name="Аренда офисов в бизнес-парке «Вымпел»">Оставить отзыв</a>
+										</div>
+									</div>
+									
+									<div class="">
+										
 									</div>
 									<div class="b-review">
 										<div class="b-review__body">
