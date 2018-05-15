@@ -502,7 +502,7 @@ p
 		max-width: calc(100% - 35px)
 .b-sidebar-path__btn
 	display: inline-flex
-	padding: 0 0 3px 0
+	padding: 0 0 0px 0
 	width: 24px
 	height: 24px
 	margin-left: 10px
@@ -934,6 +934,11 @@ p
 	justify-content: space-between
 	background: $blue-btn
 	color: $white
+	a
+		color: $white
+		text-decoration: underline
+	.btn
+		text-decoration: none
 .banner-request-call__title
 	font: 16px/1.3 $RobotoSlab
 	font-weight: bold
@@ -1864,8 +1869,10 @@ ul.select2-results__options
 	border-radius: 50%
 	background: $blue-btn
 	border: none
+	box-shadow: 2px 0px 10px -1px rgba(0,0,0,0.7)
 	transform: rotate(90deg) translateY(calc(-100% - 40px))
 	transition: all 100ms ease-in-out
+	z-index: 2
 	img
 		transition: all 300ms ease-in-out
 	&:hover

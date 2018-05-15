@@ -513,7 +513,16 @@
 											<div class="col-xlg-6 col-xl-12">
 												<div class="banner banner-request-call" >
 													<div class="banner-request-call__title">Заказать звонок</div>
-													<input type="tel" class="banner-request-call__input" placeholder="Телефон" >
+													<div>
+														<input type="tel" class="banner-request-call__input w-100" placeholder="Телефон" >
+														<label class="b-label b-label--checkbox">
+															<input type="checkbox">
+															<div class="b-checkbox">
+																<i class="icon icon-checked--red"></i>
+															</div>
+															<div class="b-checkbox__text">Согласие на <a href="#">обработку данных</a></div>
+														</label>
+													</div>
 													<div class="txt-c w-100">
 														<a href="#" class="btn btn--red">Отправить</a>
 													</div>

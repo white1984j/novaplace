@@ -8,6 +8,7 @@ $(function() {
 
 
 	//sliders
+
 	(function() {
 		if( !$('.b-catalog-item-img-slider').length ) return;
 		$('.b-catalog-item-img-slider').each(function(){
@@ -28,7 +29,7 @@ $(function() {
 					}
 				})
 		})
-	});
+	}());
 	
 
 
@@ -390,7 +391,7 @@ $(document).ready(function(){
 
     myMap.geoObjects.add(myPlacemark);
 
-    myPlacemark.balloon.open();
+    myPlacemark.balloon.open(myMap.getCenter());
     
 
 	}

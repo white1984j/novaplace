@@ -41,7 +41,7 @@
 												  </a>
 											  </div>
 											</div>
-											<div class="b-detailed-slider--sm">
+											<div class="b-detailed-slider--sm d-none d-md-block">
 												<div>
 												      <img src="img/detailed/detailed.png" width="995px" />
 												</div>
@@ -67,6 +67,20 @@
 													<div class="b-price">
 														32 000 ₽
 													</div>
+												</div>
+												<div class="b-detailed-info__path">
+													<div class="b-detailed-props__title">Контакты</div>
+													<ul class="b-detailed-props__list">
+															<li>
+																<b>Агент:</b> Новиков Евгений
+															</li>
+															<li>
+																<b>Мобильный:</b> <a href="tel:89305943122">89305943122</a>
+															</li>
+															<li>
+																<b>Телефон:</b> <a href="tel:89032928968">8-903-292-89-68</a>
+															</li>
+														</ul>
 												</div>
 											</div>
 										</div>
