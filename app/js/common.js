@@ -370,6 +370,39 @@ $(function() {
 			$('.b-back-top').removeClass('b-back-top--visible');
 	});
 
+
+	// mask
+	$('input[type="tel"]')
+		.addClass('input-mask')
+		.inputmask({ 
+			"mask": "+7(999)999-99-99", 
+			"cc": "RU", 
+			"name_en": "Russia", 
+			"desc_en": "", 
+			"name_ru": "Россия", 
+			"desc_ru": "" 
+		})
+		.on('input', function(e){
+			if( isNumeric( $(this).val().slice(-1) ) )
+				$(this).addClass('isValid');
+			else
+				$(this).removeClass('isValid');
+		});
+	$('input[type="email"]')
+		.addClass('input-mask')
+		.on('input', function() {
+			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+			if( re.test( $(this).val().toLowerCase() ))
+				$(this).addClass('isValid')
+			else
+				$(this).removeClass('isValid')
+		});
+
+
+	function isNumeric(n) {
+		return !isNaN(parseFloat(n)) && isFinite(n);
+	};
+
 });
 
 
@@ -392,8 +425,6 @@ $(document).ready(function(){
     myMap.geoObjects.add(myPlacemark);
 
     myPlacemark.balloon.open(myMap.getCenter());
-    
-
 	}
 
 });

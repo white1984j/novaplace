@@ -38,6 +38,7 @@ gulp.task('styles', function() {
 	.pipe(browsersync.reload( {stream: true} ))
 });
 
+
 // gulp.task('commonjs', () =>
 //     gulp.src('app/js/common.js')
 //         .pipe(babel({
@@ -56,6 +57,7 @@ gulp.task('js', function() {
 		'app/libs/lightgallery/dist/js/lightgallery-all.min.js',
 		'app/libs/lg-fullscreen/dist/lg-fullscreen.min.js',
 		'app/libs/lg-thumbnail/dist/lg-thumbnail.min.js',
+		'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
