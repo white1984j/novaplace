@@ -351,12 +351,6 @@ $(function() {
 	});
 
 
-	//remove label error
-	$('.b-input').on('focus', function() {
-		if( $(this).closest('.b-label--error').length )
-			$(this).closest('.b-label--error').removeClass('b-label--error')
-	});
-
 
 
 	//scroll back top
@@ -402,6 +396,48 @@ $(function() {
 	function isNumeric(n) {
 		return !isNaN(parseFloat(n)) && isFinite(n);
 	};
+
+
+
+	//check form
+	$('form').on('submit', function(e) {
+
+		var err = false;
+
+		$(this).find('input.required').each(function() {
+			if( $(this).hasClass('input-check-agreement-data') && !$(this).is(':checked') )
+				addError($(this))
+			else if( $(this).hasClass('input-mask') && !$(this).hasClass('isValid') )
+				addError($(this))
+			else if( !$(this).val().length )
+				addError($(this))
+		})
+
+		if(err)
+			e.preventDefault();
+		else{
+			$.magnificPopup.close();
+			$.magnificPopup.open({
+				items: {
+					src: '#success-dispatch'
+				},
+					type: 'inline'
+			});
+			e.preventDefault();
+		}
+
+		function addError(elem){
+			elem.closest('.b-label').addClass('b-label--error');
+			err = true;
+		}
+	});
+
+	//remove label error
+	$('.b-input, input.input-check-agreement-data').on('focus change', function() {
+		if( $(this).closest('.b-label--error').length )
+			$(this).closest('.b-label--error').removeClass('b-label--error')
+	});
+
 
 });
 

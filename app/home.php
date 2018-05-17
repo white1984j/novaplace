@@ -511,22 +511,26 @@
 												</div>
 											</div>
 											<div class="col-xlg-6 col-xl-12">
-												<div class="banner banner-request-call" >
+												<form class="banner banner-request-call" >
 													<div class="banner-request-call__title">Заказать звонок</div>
 													<div>
-														<input type="tel" class="banner-request-call__input w-100" placeholder="Телефон" >
+														<label class="b-label w-100">
+															<input type="tel" class="b-input banner-request-call__input required w-100" placeholder="Телефон">
+															<p class="error-text">Заполните пожалуйста поле</p>
+														</label>
 														<label class="b-label b-label--checkbox">
-															<input type="checkbox">
+															<input type="checkbox" class="input-check-agreement-data required">
 															<div class="b-checkbox">
 																<i class="icon icon-checked--red"></i>
 															</div>
 															<div class="b-checkbox__text">Согласие на <a href="#">обработку данных</a></div>
+															<p class="error-text">Заполните пожалуйста поле</p>
 														</label>
 													</div>
 													<div class="txt-c w-100">
-														<a href="#" class="btn btn--red">Отправить</a>
+														<input type="submit" value="Отправить" class="btn btn--red" />
 													</div>
-												</div>
+												</form>
 											</div>
 										</div>
 									</div>
