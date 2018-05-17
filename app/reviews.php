@@ -233,31 +233,35 @@
 										<form>
 											<label class="b-label">
 												<p class="b-label__txt">Название товара</p>
-												<input type="text" class="b-input" name="product-name">
+												<input type="text" class="b-input required" name="product-name">
+												<p class="error-text">Заполните пожалуйста поле</p>
 											</label>
 											<label class="b-label">
 												<p class="b-label__txt">Имя</p>
-												<input type="text" class="b-input">
-											</label>
-											<label class="b-label b-label--error">
-												<p class="b-label__txt">Email</p>
-												<input type="email" class="b-input">
-												<p class="error-text">Например info@mail.ru</p>
+												<input type="text" class="b-input required">
+												<p class="error-text">Заполните пожалуйста поле</p>
 											</label>
 											<label class="b-label">
-												<p class="b-label__txt">Phone</p>
-												<input type="tel" class="b-input">
+												<p class="b-label__txt">Email</p>
+												<input type="email" class="b-input required">
+												<p class="error-text">Заполните пожалуйста поле</p>
+											</label>
+											<label class="b-label">
+												<p class="b-label__txt">Телефон</p>
+												<input type="tel" class="b-input required">
+												<p class="error-text">Заполните пожалуйста поле</p>
 											</label>
 											<label class="b-label">
 												<p class="b-label__txt">Сообщение</p>
 												<textarea class="b-input"></textarea>
 											</label>
 											<label class="b-label b-label--checkbox">
-												<input type="checkbox">
+												<input type="checkbox" class="input-check-agreement-data required">
 												<div class="b-checkbox">
 													<i class="icon icon-checked--red"></i>
 												</div>
 												<div class="b-checkbox__text">Согласие на <a href="#">обработку данных</a></div>
+												<p class="error-text">Заполните пожалуйста поле</p>
 											</label>
 											<div class="txt-c">
 												<input type="submit" class="btn btn--red" value="Отправить" >
@@ -278,7 +282,7 @@
 
 	</div>
 
-	<script src="js/scripts.min.js"></script>
+	<? include('include-scripts.php') ?>
 
 </body>
 </html>

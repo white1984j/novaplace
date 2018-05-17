@@ -32,8 +32,7 @@
 
 	</div>
 	
-	<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-	<script src="js/scripts.min.js"></script>
+	<? include('include-scripts.php') ?>
 
 </body>
 </html>

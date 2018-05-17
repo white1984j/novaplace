@@ -132,7 +132,7 @@
 
 	</div>
 
-	<script src="js/scripts.min.js"></script>
+	<? include('include-scripts.php') ?>
 
 </body>
 </html>

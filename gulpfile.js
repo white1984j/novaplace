@@ -58,7 +58,7 @@ gulp.task('js', function() {
 		'app/libs/lg-fullscreen/dist/lg-fullscreen.min.js',
 		'app/libs/lg-thumbnail/dist/lg-thumbnail.min.js',
 		'app/libs/inputmask/dist/min/jquery.inputmask.bundle.min.js',
-		'app/js/common.js', // Always at the end
+		//'app/js/common.js',  Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(uglify()) // Mifify js (opt.)
@@ -109,6 +109,7 @@ gulp.task('build', ['removedist', 'imagemin', 'styles', 'js'], function() {
 
 	var buildJs = gulp.src([
 		'app/js/scripts.min.js',
+		'app/js/common.js'
 		]).pipe(gulp.dest('dist/js'));
 
 	var buildFonts = gulp.src([
