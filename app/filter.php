@@ -88,6 +88,9 @@
 		</div>
 		<div class="col-md-4 col-12 d-md-inline-flex">
 			<a href="#modal-filter" class="b-select-location js-mg-pp d-none d-lg-inline-flex" style="background-image: url('img/location.png')">
+<!-- 				<ul class="b-select-location__list">
+					<li><span>2 округа</span> <button>×</button></li>
+				</ul> -->
 				<i class="icon icon-location"></i>
 				<p>Выбрать расположение</p>
 			</a>
